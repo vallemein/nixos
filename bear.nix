@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ];
+    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/zerotier.nix ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;

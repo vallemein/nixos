@@ -7,3 +7,4 @@
 - DNSCrypt server
 - Yggdrasil
 - GUI config
+- zerotier-one
