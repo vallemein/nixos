@@ -29,7 +29,7 @@
     stateVersion = "22.05";
     autoUpgrade = {
       enable = true;
-      allowReboot = true;
+      allowReboot = false;
       flake = "git+https://codeberg.org/cofob/nixos";
       dates = "4:45";
     };
