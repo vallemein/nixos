@@ -73,13 +73,14 @@
       llmnr = "false";
     };
 
-    i2pd.enable = true;
-
     gnome = {
       gnome-keyring.enable = true;
       chrome-gnome-shell.enable = true;
       games.enable = false;
     };
+
+    i2pd.enable = true;
+    blueman.enable = true;
   };
   hardware.opengl.enable = true;
 
