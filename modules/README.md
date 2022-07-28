@@ -5,3 +5,4 @@
 - Docker WatchTower support
 - SSH server
 - DNSCrypt server
+- Yggdrasil

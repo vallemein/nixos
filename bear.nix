@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ ./hardware/bear.nix ./common.nix ];
+    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
@@ -39,14 +39,13 @@
     extraGroups = [ "docker" ];
     packages = with pkgs; [
       firefox
-      vscode
       ripcord
       kotatogram-desktop
       element-desktop
       bitwarden
     ];
   };
-  security.sudo.wheelNeedsPassword = false; 
+  security.sudo.wheelNeedsPassword = false;
 
   services = {
     xserver = {
@@ -56,20 +55,6 @@
       desktopManager.gnome.enable = true;
       displayManager.gdm.enable = true;
       videoDrivers = [ "nvidia" ];
-    };
-
-    yggdrasil = {
-      enable = true;
-      persistentKeys = false;
-
-      config = {
-        Peers = [
-          "tcp://kazi.peer.cofob.ru:18000"
-        ];
-
-        IfName = "ygg0";
-	      NodeInfoPrivacy = true;
-      };
     };
 
     gnome = {
