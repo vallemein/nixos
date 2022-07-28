@@ -11,10 +11,10 @@
   outputs = { self, nixpkgs, agenix }:
     {
       nixosConfigurations = {
-        personal = nixpkgs.lib.nixosSystem {
+        bear = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./personal.nix
+            ./bear.nix
             agenix.nixosModule
           ];
         };
