@@ -6,7 +6,7 @@
 
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
-  boot.loader.grub.device = "/dev/disk/by-uuid/346c0ccc-b810-404d-8882-82b608be5680";
+  boot.loader.grub.device = "/dev/sda";
 
   programs = {
     gnupg.agent = {
