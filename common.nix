@@ -1,6 +1,8 @@
 { args, config, lib, pkgs, ... }:
 
 {
+  imports = [ ./modules/modules.nix ];
+
   nix = {
     useSandbox = true;
     autoOptimiseStore = true;
@@ -50,6 +52,8 @@
     nixupd = ''
       sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://codeberg.org/cofob/nixos"'';
     tnixupd = "sudo nixos-rebuild switch --flake .";
+    find_port = "sudo netstat -tulnp | grep";
+    find_proc = "sudo ps -aux | grep";
   };
 
   console = {
@@ -60,22 +64,7 @@
   boot.cleanTmpDir = true;
   boot.tmpOnTmpfs = true;
 
-  services = {
-    openssh = {
-      enable = true;
-      ports = [ 22 ];
-      permitRootLogin = "no";
-      passwordAuthentication = false;
-    };
-
-    resolved = {
-      enable = true;
-      dnssec = "true";
-      llmnr = "false";
-    };
-
-    fstrim.enable = true;
-  };
+  services.fstrim.enable = true;
 
   environment.sessionVariables = {
     XDG_CONFIG_HOME = "$HOME/.config";
@@ -94,8 +83,6 @@
       ];
     };
   };
-
-  networking.nameservers = [ "8.8.8.8" "9.9.9.9" ];
 
   time.timeZone = "Etc/GMT+7";
 }

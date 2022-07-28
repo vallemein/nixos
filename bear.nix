@@ -33,6 +33,7 @@
   ];
 
   virtualisation.docker.enable = true;
+  virtualisation.docker.enableWatchtower = true;
 
   users.users.cofob = {
     extraGroups = [ "docker" ];
@@ -45,6 +46,7 @@
       bitwarden
     ];
   };
+  security.sudo.wheelNeedsPassword = false; 
 
   services = {
     xserver = {
