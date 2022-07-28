@@ -55,6 +55,7 @@
 
   console = {
     font = "ter-sun16";
+    keyMap = "ru";
   };
 
   boot.cleanTmpDir = true;
