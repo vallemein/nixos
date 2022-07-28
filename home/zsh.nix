@@ -42,7 +42,7 @@
       la = "${pkgs.exa}/bin/exa --icons -la";
       lt = "${pkgs.exa}/bin/exa --icons --tree";
 
-      nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "github:averyanalex/nixos"'';
+      nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://codeberg.org/cofob/nixos"'';
       tnixupd = "sudo nixos-rebuild switch --flake .";
     };
 
