@@ -60,7 +60,16 @@
   boot.cleanTmpDir = true;
   boot.tmpOnTmpfs = true;
 
-  services.fstrim.enable = true;
+  services = {
+    openssh = {
+      enable = true;
+      ports = [ 22 ];
+      permitRootLogin = "no";
+      passwordAuthentication = false;
+    };
+
+    fstrim.enable = true;
+  };
 
   environment.sessionVariables = {
     XDG_CONFIG_HOME = "$HOME/.config";
