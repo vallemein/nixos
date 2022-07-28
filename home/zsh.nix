@@ -52,6 +52,9 @@
         "git"
         "git-auto-fetch"
         "docker"
+        "docker-compose"
+        "z"
+        "zsh-interactive-cd"
       ];
     };
 
