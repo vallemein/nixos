@@ -6,5 +6,5 @@ let
   systems = [ bear ];
 in
 {
-  "passwords/cofob.age".publicKeys = users ++ systems;
+  "./passwords/cofob.age".publicKeys = users ++ systems;
 }
