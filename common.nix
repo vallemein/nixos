@@ -77,7 +77,7 @@
 
   age.secrets.password-cofob.file = ./secrets/passwords/cofob.age;
   users = {
-    mutableUsers = false;
+    mutableUsers = true;
     users.cofob = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
