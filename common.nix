@@ -48,7 +48,7 @@
 
   environment.shellAliases = {
     nixupd = ''
-      sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://codeberg.org/cofob/nixos"'';
+      sudo rm -rf /root/.cache && sudo nixos-rebuild boot --flake "git+https://codeberg.org/cofob/nixos"'';
     tnixupd = "sudo nixos-rebuild switch --flake .";
   };
 
