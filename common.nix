@@ -33,7 +33,6 @@
       flake = "git+https://codeberg.org/cofob/nixos";
       dates = "4:45";
     };
-    copySystemConfiguration = true;
   };
 
   environment.systemPackages = with pkgs; [
