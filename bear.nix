@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ];
+    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ];
 
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
@@ -18,33 +18,9 @@
     gnome-documents.enable = false;
   };
 
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
-
-  fonts.fonts = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    liberation_ttf
-    fira-code
-    fira-code-symbols
-    dina-font
-    proggyfonts
-  ];
-
   virtualisation.docker.enable = true;
   virtualisation.docker.enableWatchtower = true;
 
-  users.users.cofob = {
-    extraGroups = [ "docker" ];
-    packages = with pkgs; [
-      firefox
-      ripcord
-      kotatogram-desktop
-      element-desktop
-      bitwarden
-    ];
-  };
   security.sudo.wheelNeedsPassword = false;
 
   services = {

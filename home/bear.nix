@@ -1,3 +1,3 @@
 {
-  imports = [ ./common.nix ./dev.nix ];
+  imports = [ ./common.nix ./gui.nix ];
 }

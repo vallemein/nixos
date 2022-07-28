@@ -6,3 +6,4 @@
 - SSH server
 - DNSCrypt server
 - Yggdrasil
+- GUI config
