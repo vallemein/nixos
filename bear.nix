@@ -32,7 +32,10 @@
     proggyfonts
   ];
 
+  virtualisation.docker.enable = true;
+
   users.users.cofob = {
+    extraGroups = [ "docker" ];
     packages = with pkgs; [
       firefox
       vscode
