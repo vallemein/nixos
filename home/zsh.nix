@@ -44,6 +44,8 @@
 
       nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://codeberg.org/cofob/nixos"'';
       tnixupd = "sudo nixos-rebuild switch --flake .";
+      find_port = "sudo netstat -tulnp | grep";
+      find_proc = "sudo ps -aux | grep";
     };
 
     oh-my-zsh = {
