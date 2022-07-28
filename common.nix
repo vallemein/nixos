@@ -68,6 +68,12 @@
       passwordAuthentication = false;
     };
 
+    resolved = {
+      enable = true;
+      dnssec = "true";
+      llmnr = "false";
+    };
+
     fstrim.enable = true;
   };
 

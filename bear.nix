@@ -70,12 +70,6 @@
       };
     };
 
-    resolved = {
-      enable = true;
-      dnssec = "true";
-      llmnr = "false";
-    };
-
     gnome = {
       gnome-keyring.enable = true;
       chrome-gnome-shell.enable = true;
@@ -88,20 +82,4 @@
   hardware.opengl.enable = true;
 
   networking.hostName = "bear";
-  networking.networkmanager.enable = false;
-  networking.useNetworkd = true;
-
-  systemd.network = {
-    enable = true;
-    networks = {
-      enp3s0 = {
-        name = "enp3s0";
-        dns = [
-          "1.1.1.1"
-          "8.8.8.8"
-          "9.9.9.9"
-        ];
-      };
-    };
-  };
 }
