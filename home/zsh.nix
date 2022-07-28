@@ -38,7 +38,7 @@
     autocd = true;
 
     shellAliases = {
-      ls = "${pkgs.exa}/bin/exa --icons -l";
+      ls = "${pkgs.exa}/bin/exa --icons";
       la = "${pkgs.exa}/bin/exa --icons -la";
       lt = "${pkgs.exa}/bin/exa --icons --tree";
 
