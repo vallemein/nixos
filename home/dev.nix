@@ -76,10 +76,44 @@
 
   programs.git = {
     enable = true;
+    lfs.enable = true;
     userName = "cofob";
     userEmail = "cofob@riseup.net";
     extraConfig = {
       init.defaultBranch = "main";
+      core.editor = "codium --wait";
+      user.signingkey = "5F3D9D3DECE08651DE14D29FACAD4265E193794D";
+      commit.gpgsign = true;
+      tag.gpgsign = true;
+      url = {
+        "git@github.com:" = {
+          insteadOf = [
+            "gh:"
+            "github:"
+          ];
+        };
+        "git@codeberg.org:" = {
+          insteadOf = [
+            "cb:"
+            "codeberg:"
+          ];
+        };
+        "git@git.sr.ht:" = {
+          insteadOf = [
+            "sh:"
+            "srht:"
+            "sourcehut:"
+          ];
+        };
+        "git@git.averyan.ru:" = {
+          insteadOf = [
+            "git:"
+            "averyan:"
+            "firesquare:"
+            "frsqr:"
+          ];
+        };
+      };
     };
   };
 }
