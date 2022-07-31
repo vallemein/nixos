@@ -41,6 +41,12 @@
       proto.httpProxy.inbound.length = 1;
       proto.httpProxy.outbound.length = 1;
     };
+
+    tor = {
+      enable = true;
+      tsocks.enable = true;
+    };
+
     blueman.enable = true;
   };
   hardware.opengl.enable = true;
