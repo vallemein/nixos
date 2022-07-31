@@ -16,6 +16,15 @@
       virtualisation.docker.autoPrune.dates = "daily";
       virtualisation.docker.autoPrune.flags = [ "--all" ];
 
+      # IPv6 support
+      virtualisation.docker.daemon.settings = {
+        fixed-cidr-v6 = "fd00::/80";
+        ipv6 = true;
+      };
+
+      # enable containers on boot
+      virtualisation.docker.enableOnBoot = true;
+
       # access docker from normal user
       users.users.cofob.extraGroups = [ "docker" ];
 
