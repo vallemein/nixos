@@ -15,7 +15,6 @@
     };
     evince.enable = false;
     calls.enable = false;
-    gnome-documents.enable = false;
   };
 
   virtualisation.docker.enable = true;
@@ -28,18 +27,19 @@
       enable = true;
       layout = "us,ru";
       xkbOptions = "grp:caps_toggle";
-      desktopManager.gnome.enable = true;
-      displayManager.gdm.enable = true;
+      desktopManager.pantheon.enable = true;
+      displayManager.lightdm.enable = true;
       videoDrivers = [ "nvidia" ];
     };
 
-    gnome = {
-      gnome-keyring.enable = true;
-      chrome-gnome-shell.enable = true;
-      games.enable = false;
+    i2pd = {
+      enable = true;
+      proto.http.enable = true;
+      proto.httpProxy.enable = true;
+      proto.httpProxy.outproxy = "http://acetone.i2p:8888";
+      proto.httpProxy.inbound.length = 1;
+      proto.httpProxy.outbound.length = 1;
     };
-
-    i2pd.enable = true;
     blueman.enable = true;
   };
   hardware.opengl.enable = true;
