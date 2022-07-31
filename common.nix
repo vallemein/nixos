@@ -83,5 +83,5 @@
     };
   };
 
-  time.timeZone = "Etc/GMT+7";
+  time.timeZone = "Asia/Krasnoyarsk";
 }
