@@ -6,7 +6,7 @@
     libreoffice-fresh
     element-desktop
     bitwarden
-    ripcord
+    discord
   ];
 
   programs.firefox = {
