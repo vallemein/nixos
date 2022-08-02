@@ -13,8 +13,6 @@
       enable = true;
       enableSSHSupport = true;
     };
-    evince.enable = false;
-    calls.enable = false;
   };
 
   virtualisation.docker.enable = true;
@@ -27,8 +25,8 @@
       enable = true;
       layout = "us,ru";
       xkbOptions = "grp:caps_toggle";
-      desktopManager.pantheon.enable = true;
-      displayManager.lightdm.enable = true;
+      desktopManager.gnome.enable = true;
+      displayManager.gdm.enable = true;
       videoDrivers = [ "nvidia" ];
     };
 
