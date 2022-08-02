@@ -13,6 +13,9 @@
 
   outputs = { self, nixpkgs, agenix, home-manager }:
     {
+      nixosModules = {
+        home-headless = import ./home/common.nix;
+      };
       nixosConfigurations = {
         bear = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
