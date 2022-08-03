@@ -5,6 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    nur.url = github:nix-community/NUR;
+
     home-manager.url = "github:nix-community/home-manager/release-22.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -12,7 +14,7 @@
     agenix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, agenix, home-manager }:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nur, agenix, home-manager }:
     {
       nixosModules = {
         home-headless = import ./home/common.nix;
@@ -21,6 +23,15 @@
         bear = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
+            ./bear.nix
+            nur.nixosModules.nur
+            agenix.nixosModule
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.cofob = import ./home/bear.nix;
+            }
             ({ config, pkgs, ... }:
               let
                 overlay-unstable = final: prev: {
@@ -31,13 +42,8 @@
                 nixpkgs.overlays = [ overlay-unstable ];
               }
             )
-            ./bear.nix
-            agenix.nixosModule
-            home-manager.nixosModules.home-manager
             {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.cofob = import ./home/bear.nix;
+              nixpkgs.overlays = [ nur.overlay ];
             }
           ];
         };

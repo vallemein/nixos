@@ -11,6 +11,27 @@
 
   programs.firefox = {
     enable = true;
+    extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      # AdBlock
+      adnauseam
+
+      # Privacy
+      privacy-badger
+      foxyproxy-standard
+
+      # Sync
+      xbrowsersync
+      bitwarden
+
+      # Optimizations
+      auto-tab-discard
+      clearurls
+      decentraleyes
+
+      # Other
+      ipfs-companion
+      i-dont-care-about-cookies
+    ];
     profiles = {
       default = {
         isDefault = true;
@@ -82,33 +103,6 @@
           "datareporting.policy.dataSubmissionEnabled" = false;
           "datareporting.sessions.current.clean" = true;
         };
-        # bookmarks = [
-        #   {
-        #     name = "wikipedia";
-        #     keyword = "wiki";
-        #     url = "https://en.wikipedia.org/wiki/Special:Search?search=%s&go=Go";
-        #   }
-        #   {
-        #     name = "Nix sites";
-        #     bookmarks = [
-        #       {
-        #         name = "homepage";
-        #         url = "https://nixos.org/";
-        #         keyword = "nix";
-        #       }
-        #       {
-        #         name = "wiki";
-        #         url = "https://nixos.wiki/";
-        #         keyword = "nixwiki";
-        #       }
-        #       {
-        #         name = "search";
-        #         url = "https://search.nixos.org/";
-        #         keyword = "nixsearch";
-        #       }
-        #     ];
-        #   }
-        # ];
       };
     };
   };
