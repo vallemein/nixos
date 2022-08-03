@@ -45,6 +45,14 @@
       tsocks.enable = true;
     };
 
+    ipfs = {
+      enable = true;
+      localDiscovery = true;
+      enableGC = true;
+      autoMount = true;
+      emptyRepo = true;
+    };
+
     blueman.enable = true;
   };
   hardware.opengl.enable = true;
