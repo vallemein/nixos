@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./zsh.nix ];
+  imports = [ ./sh.nix ];
 
   programs.home-manager.enable = true;
   home = {
@@ -13,6 +13,8 @@
   services.gpg-agent = {
     enable = true;
     enableSshSupport = true;
+    enableZshIntegration = true;
+    enableBashIntegration = true;
   };
 
   home.packages = with pkgs; [

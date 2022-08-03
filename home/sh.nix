@@ -10,6 +10,31 @@
 
   programs.bat.enable = true;
 
+  programs.gpg = {
+    enable = true;
+    mutableKeys = false;
+    mutableTrust = false;
+    publicKeys = [
+      {
+        # My key
+        source = ./configs/gpg/cofob.txt;
+        trust = 5;
+      }
+      {
+        # Averyanalex
+        source = ./configs/gpg/alex.txt;
+        trust = 4;
+      }
+    ];
+  };
+
+  programs.vim = {
+    enable = true;
+    settings = {
+      mouse = "n";
+    };
+  };
+
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;

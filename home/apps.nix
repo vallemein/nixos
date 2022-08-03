@@ -9,6 +9,8 @@
     discord
   ];
 
+  manual.html.enable = true;
+
   programs.firefox = {
     enable = true;
     extensions = with pkgs.nur.repos.rycee.firefox-addons; [
