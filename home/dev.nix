@@ -10,19 +10,24 @@
     package = pkgs.vscodium;
     mutableExtensionsDir = false;
     extensions = with pkgs.vscode-extensions; [
-      serayuzgur.crates
+      golang.go
+      ms-python.python
+      tyriar.sort-lines
+      bierner.emojisense
       jnoortheen.nix-ide
-      bradlc.vscode-tailwindcss
-      editorconfig.editorconfig
+      svelte.svelte-vscode
       dbaeumer.vscode-eslint
       esbenp.prettier-vscode
+      wix.vscode-import-cost
+      WakaTime.vscode-wakatime
+      bradlc.vscode-tailwindcss
+      editorconfig.editorconfig
+      github.github-vscode-theme
+      shardulm94.trailing-spaces
+      yzhang.markdown-all-in-one
+      ms-vscode-remote.remote-ssh
+      ms-ceintl.vscode-language-pack-ru
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-      {
-        name = "svelte-vscode";
-        publisher = "svelte";
-        version = "105.20.0";
-        sha256 = "+vYNgKVuknPROKTMMHugc9VrvYZ7GONr5SgYsb7l5rs=";
-      }
       {
         name = "vscode-todo-highlight";
         publisher = "wayou";
@@ -36,18 +41,6 @@
         sha256 = "VeL3yvfaNIHUPaZHDxSE8pbdh4c93uMjhSMv2PWR6ts=";
       }
       {
-        name = "even-better-toml";
-        publisher = "tamasfe";
-        version = "0.16.5";
-        sha256 = "pRUiXsZGhTIQx2Qx9NFQ7OGRros3KdzjUlq13nm4pAc=";
-      }
-      {
-        name = "rust-analyzer";
-        publisher = "rust-lang";
-        version = "0.4.1143";
-        sha256 = "nRtRSbGVsT47LYY6mdL0v9fvR8inj+benNJUPJdbVEs=";
-      }
-      {
         name = "direnv";
         publisher = "mkhl";
         version = "0.6.1";
@@ -57,7 +50,6 @@
     userSettings = {
       "nix.enableLanguageServer" = true;
       "svelte.enable-ts-plugin" = true;
-      "rust-analyzer.server.path" = "${pkgs.rust-analyzer}/bin/rust-analyzer";
 
       "[svelte]"."editor.defaultFormatter" = "svelte.svelte-vscode";
 
