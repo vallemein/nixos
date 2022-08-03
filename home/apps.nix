@@ -18,9 +18,6 @@
       # Privacy
       privacy-badger
       foxyproxy-standard
-
-      # Sync
-      xbrowsersync
       bitwarden
 
       # Optimizations
