@@ -7,6 +7,7 @@
     element-desktop
     bitwarden
     discord
+    mumble
   ];
 
   manual.html.enable = true;
