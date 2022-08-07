@@ -9,7 +9,7 @@
     enable = true;
     package = pkgs.vscodium;
     mutableExtensionsDir = false;
-    extensions = with pkgs.vscode-extensions; [
+    extensions = with pkgs.unstable.vscode-extensions; [
       golang.go
       ms-python.python
       tyriar.sort-lines
@@ -25,7 +25,6 @@
       github.github-vscode-theme
       shardulm94.trailing-spaces
       yzhang.markdown-all-in-one
-      ms-vscode-remote.remote-ssh
       ms-ceintl.vscode-language-pack-ru
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
@@ -51,8 +50,6 @@
       "nix.enableLanguageServer" = true;
       "svelte.enable-ts-plugin" = true;
 
-      "[svelte]"."editor.defaultFormatter" = "svelte.svelte-vscode";
-
       "editor.quickSuggestions" = {
         "strings" = true;
       };
@@ -63,6 +60,28 @@
       "git.confirmSync" = false;
       "git.enableSmartCommit" = true;
       "git.autofetch" = true;
+      "git.branchPrefix" = "cofob-";
+      "git.autoStash" = true;
+      "git.branchProtection" = [
+        "master"
+        "main"
+      ];
+      "git.branchRandomName.enable" = true;
+      "git.fetchOnPull" = true;
+      "git.mergeEditor" = true;
+
+      "[javascript]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "editor.formatOnSave" = true;
+      };
+      "[typescript]" = {
+        "editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "editor.formatOnSave" = true;
+      };
+      "[svelte]" = {
+        "editor.defaultFormatter" = "svelte.svelte-vscode";
+        "editor.formatOnSave" = true;
+      };
 
       "workbench.colorTheme" = "GitHub Dark Default";
     };
