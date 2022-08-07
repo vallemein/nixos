@@ -11,8 +11,10 @@
     mutableExtensionsDir = false;
     extensions = with pkgs.unstable.vscode-extensions; [
       golang.go
+      eamodio.gitlens
       ms-python.python
       tyriar.sort-lines
+      mhutchie.git-graph
       bierner.emojisense
       jnoortheen.nix-ide
       svelte.svelte-vscode
@@ -44,6 +46,12 @@
         publisher = "mkhl";
         version = "0.6.1";
         sha256 = "5/Tqpn/7byl+z2ATflgKV1+rhdqj+XMEZNbGwDmGwLQ=";
+      }
+      {
+        name = "vscode-gitweblinks";
+        publisher = "reduckted";
+        version = "2.7.0";
+        sha256 = "GZYFO0EDcD2v/Vf37NuXQQiv5iyqWSJm8CSzd2udoxY=";
       }
     ];
     userSettings = {
