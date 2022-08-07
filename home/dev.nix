@@ -80,6 +80,11 @@
       "git.fetchOnPull" = true;
       "git.mergeEditor" = true;
 
+      # Git lens
+      "gitlens.currentLine.enabled" = false;
+      "gitlens.codeLens.enabled" = false;
+      "gitlens.statusBar.enabled" = false;
+
       # Git web links config
       "gitweblinks.useShortHash" = true;
       "gitweblinks.gitLabEnterprise" = [
