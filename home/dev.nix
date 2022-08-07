@@ -58,6 +58,7 @@
       "nix.enableLanguageServer" = true;
       "svelte.enable-ts-plugin" = true;
 
+      # Suggest faster
       "editor.quickSuggestions" = {
         "strings" = true;
       };
@@ -65,6 +66,7 @@
       "files.autoSave" = "afterDelay";
       "diffEditor.ignoreTrimWhitespace" = false;
 
+      # Git settings
       "git.confirmSync" = false;
       "git.enableSmartCommit" = true;
       "git.autofetch" = true;
@@ -78,6 +80,20 @@
       "git.fetchOnPull" = true;
       "git.mergeEditor" = true;
 
+      # Git web links config
+      "gitweblinks.useShortHash" = true;
+      "gitweblinks.gitLabEnterprise" = [
+        {
+          "http" = "https://git.averyan.ru";
+          "ssh" = "git@git.averyan.ru";
+        }
+        {
+          "http" = "https://git.frsqr.xyz";
+          "ssh" = "git@git.averyan.ru";
+        }
+      ];
+
+      # Formatter settings
       "[javascript]" = {
         "editor.defaultFormatter" = "esbenp.prettier-vscode";
         "editor.formatOnSave" = true;
@@ -91,6 +107,7 @@
         "editor.formatOnSave" = true;
       };
 
+      # Set editor theme
       "workbench.colorTheme" = "GitHub Dark Default";
     };
   };
