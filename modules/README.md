@@ -3,8 +3,8 @@
 ## List
 
 - Docker WatchTower support
-- SSH server
 - DNSCrypt server
-- Yggdrasil
-- GUI config
 - zerotier-one
+- SSH server
+- GUI config
+- Yggdrasil

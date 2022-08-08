@@ -36,13 +36,13 @@
   };
 
   programs.zoxide = {
-    enable = true;
     enableZshIntegration = true;
+    enable = true;
   };
 
   programs.fzf = {
-    enable = true;
     enableZshIntegration = true;
+    enable = true;
   };
 
   programs.exa = {
@@ -50,8 +50,8 @@
   };
 
   programs.direnv = {
-    enable = true;
     enableZshIntegration = true;
+    enable = true;
 
     nix-direnv.enable = true;
   };
@@ -59,9 +59,9 @@
   programs.zsh = {
     enable = true;
 
+    enableSyntaxHighlighting = true;
     enableAutosuggestions = true;
     enableCompletion = true;
-    enableSyntaxHighlighting = true;
     autocd = true;
 
     shellAliases = {
@@ -78,12 +78,12 @@
     oh-my-zsh = {
       enable = true;
       plugins = [
-        "git"
-        "git-auto-fetch"
-        "docker"
-        "docker-compose"
-        "z"
         "zsh-interactive-cd"
+        "git-auto-fetch"
+        "docker-compose"
+        "docker"
+        "git"
+        "z"
       ];
     };
 

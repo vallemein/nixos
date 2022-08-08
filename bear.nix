@@ -2,12 +2,12 @@
 
 {
   imports =
-    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/zerotier.nix ];
+    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/xserver.nix ];
 
+  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
-  boot.loader.grub.device = "/dev/sda";
-  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   programs = {
     gnupg.agent = {
@@ -16,21 +16,12 @@
     };
   };
 
-  virtualisation.docker.enable = true;
   virtualisation.docker.enableWatchtower = true;
+  virtualisation.docker.enable = true;
 
   security.sudo.wheelNeedsPassword = false;
 
   services = {
-    xserver = {
-      enable = true;
-      layout = "us,ru";
-      xkbOptions = "grp:caps_toggle";
-      desktopManager.gnome.enable = true;
-      displayManager.gdm.enable = true;
-      videoDrivers = [ "nvidia" ];
-    };
-
     i2pd = {
       enable = true;
       enableIPv6 = true;

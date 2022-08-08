@@ -4,12 +4,12 @@
   imports = [ ./apps.nix ./dev.nix ];
 
   home.packages = with pkgs; [
+    noto-fonts-emoji
+    liberation_ttf
     dejavu_fonts
     freefont_ttf
-    gyre-fonts
-    liberation_ttf
-    unifont
-    noto-fonts-emoji
     meslo-lgs-nf
+    gyre-fonts
+    unifont
   ];
 }

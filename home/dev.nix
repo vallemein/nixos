@@ -10,24 +10,24 @@
     package = pkgs.vscodium;
     mutableExtensionsDir = false;
     extensions = with pkgs.unstable.vscode-extensions; [
-      golang.go
-      eamodio.gitlens
-      ms-python.python
-      tyriar.sort-lines
-      mhutchie.git-graph
-      bierner.emojisense
-      jnoortheen.nix-ide
-      svelte.svelte-vscode
-      dbaeumer.vscode-eslint
-      esbenp.prettier-vscode
-      wix.vscode-import-cost
-      WakaTime.vscode-wakatime
-      bradlc.vscode-tailwindcss
-      editorconfig.editorconfig
+      ms-ceintl.vscode-language-pack-ru
       github.github-vscode-theme
       shardulm94.trailing-spaces
       yzhang.markdown-all-in-one
-      ms-ceintl.vscode-language-pack-ru
+      bradlc.vscode-tailwindcss
+      editorconfig.editorconfig
+      WakaTime.vscode-wakatime
+      dbaeumer.vscode-eslint
+      esbenp.prettier-vscode
+      wix.vscode-import-cost
+      svelte.svelte-vscode
+      mhutchie.git-graph
+      bierner.emojisense
+      jnoortheen.nix-ide
+      tyriar.sort-lines
+      ms-python.python
+      eamodio.gitlens
+      golang.go
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
         name = "vscode-todo-highlight";
@@ -63,14 +63,14 @@
         "strings" = true;
       };
 
-      "files.autoSave" = "afterDelay";
       "diffEditor.ignoreTrimWhitespace" = false;
+      "files.autoSave" = "afterDelay";
 
       # Git settings
-      "git.confirmSync" = false;
       "git.enableSmartCommit" = true;
-      "git.autofetch" = true;
       "git.branchPrefix" = "cofob-";
+      "git.confirmSync" = false;
+      "git.autofetch" = true;
       "git.autoStash" = true;
       "git.branchProtection" = [
         "master"
@@ -82,8 +82,8 @@
 
       # Git lens
       "gitlens.currentLine.enabled" = false;
-      "gitlens.codeLens.enabled" = false;
       "gitlens.statusBar.enabled" = false;
+      "gitlens.codeLens.enabled" = false;
 
       # Git web links config
       "gitweblinks.useShortHash" = true;
@@ -131,29 +131,29 @@
       url = {
         "git@github.com:" = {
           insteadOf = [
-            "gh:"
             "github:"
+            "gh:"
           ];
         };
         "git@codeberg.org:" = {
           insteadOf = [
-            "cb:"
             "codeberg:"
+            "cb:"
           ];
         };
         "git@git.sr.ht:" = {
           insteadOf = [
-            "sh:"
-            "srht:"
             "sourcehut:"
+            "srht:"
+            "sh:"
           ];
         };
         "git@git.averyan.ru:" = {
           insteadOf = [
-            "git:"
-            "averyan:"
             "firesquare:"
+            "averyan:"
             "frsqr:"
+            "git:"
           ];
         };
       };

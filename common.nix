@@ -25,8 +25,6 @@
     };
   };
 
-  nixpkgs.config.allowUnfree = true;
-
   system = {
     stateVersion = "22.05";
     autoUpgrade = {
@@ -37,7 +35,7 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs.unstable; [
     git
     vim
     htop
