@@ -2,14 +2,29 @@
 
 {
   config = {
-    environment.systemPackages = with pkgs.unstable; [
-      gnome-console
-      gnome.nautilus
+    environment.systemPackages = with pkgs.unstable.gnomeExtensions; [
+      yakuake
+      gsconnect
+    ];
+
+    environment.gnome.excludePackages = with pkgs.unstable.gnome; [
+      yelp
+      gedit
+      cheese
+      epiphany
+      gnome-logs
+      gnome-maps
+      gnome-music
+      simple-scan
+      gnome-clocks
+      gnome-weather
+      gnome-calendar
+      gnome-contacts
+      gnome-calculator
+      gnome-characters
+      gnome-font-viewer
       pkgs.gnome-photos
-      gnome.gnome-screenshot
-      gnomeExtensions.yakuake
-      gnomeExtensions.gsconnect
-      gnome.gnome-system-monitor
+      pkgs.gnome-connections
     ];
 
     nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
@@ -28,7 +43,6 @@
       };
 
       gnome = {
-        core-utilities.enable = false;
         tracker-miners.enable = false;
         tracker.enable = false;
         games.enable = false;

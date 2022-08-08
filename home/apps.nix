@@ -6,8 +6,8 @@
     unstable.bitwarden
     unstable.mumble
     unstable.nheko
-    # Delta Chat wont work in unstable version :(
-    deltachat-desktop
+    deltachat-desktop # Delta Chat wont work in unstable version :(
+    vlc
   ];
 
   manual.html.enable = true;
