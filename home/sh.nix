@@ -28,11 +28,69 @@
     ];
   };
 
-  programs.vim = {
+  programs.neovim = {
     enable = true;
-    settings = {
-      mouse = "n";
+    coc.enable = true;
+    coc.package = pkgs.unstable.vimPlugins.coc-nvim;
+    coc.settings = {
+      "svelte.enable-ts-plugin" = true;
+
+      "eslint.packageManager" = "yarn";
+      "eslint.nodePath" = ".yarn/sdks";
+      "workspace.workspaceFolderCheckCwd" = false;
+      "tsserver.tsdk" = ".yarn/sdks/typescript/lib";
+
+      "tailwindCSS.headwind.runOnSave" = true;
+      "tailwindCSS.headwind.removeDuplicates" = true;
     };
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+    withNodeJs = true;
+    withPython3 = true;
+    extraConfig = ''
+      set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+      set guifont=Fura\ Code\ Light\ Nerd\ Font\ Complete:h16
+      let g:airline_section_z = "\ue0a1:%l/%L Col:%c"
+      let g:airline#extensions#xkblayout#enabled = 0
+      let g:airline#extensions#keymap#enabled = 0
+      let g:airline_powerline_fonts = 1
+      let g:Powerline_symbols='unicode'
+      filetype plugin indent on
+      filetype off
+      syntax on
+      colorscheme monokai
+      autocmd VimEnter * NERDTree
+      set formatoptions=tcqrn1
+      set encoding=utf-8
+      set softtabstop=2
+      set nocompatible
+      set shiftwidth=2
+      set noshiftround
+      set cursorline
+      set smartcase
+      set tabstop=2
+      set expandtab
+      set nobackup
+      set showmode
+      set showcmd
+      set ttyfast
+      set number
+      set wrap
+    '';
+    plugins = with pkgs.unstable.vimPlugins; [
+      nerdtree
+      vim-fugitive
+      vim-devicons
+      vim-monokai
+      vim-airline
+      vim-nix
+      coc-svelte
+      vim-svelte
+      coc-tailwindcss
+      coc-tsserver
+      coc-tslint-plugin
+    ];
   };
 
   programs.zoxide = {

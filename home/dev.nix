@@ -124,7 +124,7 @@
     userEmail = "cofob@riseup.net";
     extraConfig = {
       init.defaultBranch = "main";
-      core.editor = "codium --wait";
+      core.editor = "nvim";
       user.signingkey = "5F3D9D3DECE08651DE14D29FACAD4265E193794D";
       commit.gpgsign = true;
       tag.gpgsign = true;

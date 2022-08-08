@@ -70,6 +70,7 @@
   age.secrets.password-cofob.file = ./secrets/passwords/cofob.age;
   users = {
     mutableUsers = false;
+    defaultUserShell = pkgs.zsh;
     users.cofob = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
