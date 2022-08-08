@@ -1,10 +1,12 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.packages = with pkgs.unstable; [
-    bitwarden
-    mumble
-    nheko
+  home.packages = with pkgs; [
+    unstable.kotatogram-desktop
+    unstable.bitwarden
+    deltachat-desktop
+    unstable.mumble
+    unstable.nheko
   ];
 
   manual.html.enable = true;
