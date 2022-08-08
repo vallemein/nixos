@@ -4,9 +4,10 @@
   home.packages = with pkgs; [
     unstable.kotatogram-desktop
     unstable.bitwarden
-    deltachat-desktop
     unstable.mumble
     unstable.nheko
+    # Delta Chat wont work in unstable version :(
+    deltachat-desktop
   ];
 
   manual.html.enable = true;
