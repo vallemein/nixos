@@ -3,9 +3,13 @@
 {
   config = {
     environment.systemPackages = with pkgs.unstable; [
+      nautilus
+      gnome-photos
       gnome-console
-      gnomeExtensions.gsconnect
+      gnome-screenshot
+      gnome-system-monitor
       gnomeExtensions.yakuake
+      gnomeExtensions.gsconnect
     ];
 
     nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
