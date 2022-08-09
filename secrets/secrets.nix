@@ -3,7 +3,7 @@ let
   users = [ cofob ];
 
   bear = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICxTTHyhhZTc6pw+p55FfRZeuUqvHLy4RGGcZD1m9Nbf";
-  fly = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBxmrSdAJJIUTSBqDqI1nb7qM1bAFKjWLH6HL7gDiXvJ";
+  fly = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF055AhsfgQArYGwBTPeJsfOhPQOV++nYOvPRKOjVcWh";
   systems = [ bear fly ];
 in
 {
