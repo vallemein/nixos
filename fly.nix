@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ ./hardware/fly.nix.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/xserver.nix ];
+    [ ./hardware/fly.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/xserver.nix ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.loader.systemd-boot.enable = true;
