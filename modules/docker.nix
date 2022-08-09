@@ -3,7 +3,7 @@
 {
   options.virtualisation.docker.enableWatchtower = lib.mkOption {
     type = lib.types.bool;
-    default = false; # config.virtualisation.docker.enable
+    default = false;
     description = ''
       Enable automatic image updates.
     '';

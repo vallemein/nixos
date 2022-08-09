@@ -56,11 +56,11 @@
       let g:airline#extensions#keymap#enabled = 0
       let g:airline_powerline_fonts = 1
       let g:Powerline_symbols='unicode'
+      let g:auto_save = 1
       filetype plugin indent on
       filetype off
       syntax on
       colorscheme monokai
-      autocmd VimEnter * NERDTree
       set formatoptions=tcqrn1
       set encoding=utf-8
       set softtabstop=2
@@ -80,6 +80,7 @@
     '';
     plugins = with pkgs.unstable.vimPlugins; [
       nerdtree
+      vim-auto-save
       vim-fugitive
       vim-devicons
       vim-monokai
