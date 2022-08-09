@@ -47,6 +47,34 @@
             }
           ];
         };
+        
+        fly = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./fly.nix
+            home-manager.nixosModules.home-manager
+            nur.nixosModules.nur
+            agenix.nixosModule
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.cofob = import ./home/fly.nix;
+            }
+            ({ config, pkgs, ... }:
+              let
+                overlay-unstable = final: prev: {
+                  unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
+                };
+              in
+              {
+                nixpkgs.overlays = [ overlay-unstable ];
+              }
+            )
+            {
+              nixpkgs.overlays = [ nur.overlay ];
+            }
+          ];
+        };
       };
     };
 }
