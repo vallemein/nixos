@@ -7,19 +7,19 @@
   boot.extraModulePackages = [ ];
  
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4307ddb0-55e3-4171-85d7-10f25d1dbe1f";
+    { device = "/dev/disk/by-uuid/b3d744d7-6135-42d7-ae46-7d6a4ce16ec1";
       fsType = "ext4";
     };
- 
+
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/B8AB-8C36";
       fsType = "vfat";
     };
- 
+
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/1b020237-6b44-4d9b-ae8c-3e6a0336d702"; }
+    [ { device = "/dev/disk/by-uuid/9ab6a7ee-48a3-4e7e-a021-4aa231503abd"; }
     ];
- 
+
   networking.useDHCP = lib.mkDefault true;
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
