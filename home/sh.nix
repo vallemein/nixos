@@ -130,6 +130,7 @@
 
       nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://codeberg.org/cofob/nixos"'';
       tnixupd = "sudo nixos-rebuild switch --flake .";
+      nixclear = "sudo nix-store --gc && sudo nix-collect-garbage -d && nixupd";
       find_port = "sudo netstat -tulnp | grep";
       find_proc = "sudo ps -aux | grep";
     };
