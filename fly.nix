@@ -6,6 +6,8 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.unstable.linuxPackages_latest;
+  boot.kernelParams = [ "mem_sleep_default=deep" ]; # Enable hibernation
 
   virtualisation.docker.enable = true;
 
