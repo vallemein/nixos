@@ -21,7 +21,7 @@
           "tcp://ygg.mkg20001.io:80"
         ];
 
-	      NodeInfoPrivacy = true;
+        NodeInfoPrivacy = true;
         IfName = "ygg0";
       };
     };

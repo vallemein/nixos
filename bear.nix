@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ ./hardware/bear.nix ./common.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/privacy.nix ./modules/ipfs.nix ./modules/bluetooth.nix ];
+    [ ./hardware/bear.nix ./common.nix ];
 
   boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.loader.grub.device = "/dev/sda";

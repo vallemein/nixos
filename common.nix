@@ -1,7 +1,7 @@
 { args, config, lib, pkgs, ... }:
 
 {
-  imports = [ ./modules/modules.nix ];
+  imports = [ ./modules/modules.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/privacy.nix ./modules/ipfs.nix ./modules/bluetooth.nix ];
 
   nix = {
     useSandbox = true;

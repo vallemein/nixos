@@ -2,5 +2,6 @@
 
 ## Machines
 
- - Bear (my personal desktop)
+ - Bear (pc)
+ - Fly (laptop)
 
