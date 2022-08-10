@@ -152,10 +152,15 @@
         };
         "git@git.averyan.ru:" = {
           insteadOf = [
-            "firesquare:"
             "averyan:"
-            "frsqr:"
             "git:"
+          ];
+        };
+        "git@git.averyan.ru:firesquare/" = {
+          insteadOf = [
+            "firesquare:"
+            "frsqr:"
+            "fs:"
           ];
         };
       };
