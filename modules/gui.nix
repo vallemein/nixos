@@ -70,5 +70,6 @@
       package = pkgs.pulseaudioFull;
     };
     sound.enable = true;
+    nixpkgs.config.pulseaudio = true;
   };
 }
