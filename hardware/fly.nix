@@ -28,8 +28,6 @@
     [{ device = "/dev/disk/by-uuid/47452dc1-7b2a-4c06-8d4f-064c356895fd"; }];
 
   networking.useDHCP = lib.mkDefault true;
-  networking.interfaces.eno1.useDHCP = lib.mkDefault true;
-  networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
