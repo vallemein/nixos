@@ -1,4 +1,4 @@
 {
-  imports = [ ./common.nix ./gui.nix ];
+  imports = [ ./common.nix ./gui.nix ./games.nix ];
 }
 
