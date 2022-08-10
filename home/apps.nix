@@ -7,6 +7,7 @@
     unstable.mumble
     unstable.nheko
     deltachat-desktop # Delta Chat wont work in unstable version :(
+    discord
     vlc
   ];
 

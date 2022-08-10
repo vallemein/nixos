@@ -37,6 +37,8 @@
 
   security.sudo.wheelNeedsPassword = false;
 
+  nixpkgs.config.allowUnfree = true;
+
   programs = {
     gnupg.agent = {
       enable = true;
