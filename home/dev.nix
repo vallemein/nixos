@@ -81,9 +81,9 @@
       "git.mergeEditor" = true;
 
       # Git lens
-      "gitlens.currentLine.enabled" = false;
-      "gitlens.statusBar.enabled" = false;
-      "gitlens.codeLens.enabled" = false;
+      "gitlens.currentLine.enabled" = true;
+      "gitlens.statusBar.enabled" = true;
+      "gitlens.codeLens.enabled" = true;
 
       # Git web links config
       "gitweblinks.useShortHash" = true;
