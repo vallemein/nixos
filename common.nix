@@ -94,4 +94,6 @@
   };
 
   time.timeZone = "Asia/Krasnoyarsk";
+
+  networking.domain = "cofob.ru";
 }
