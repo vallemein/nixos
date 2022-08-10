@@ -22,7 +22,6 @@
       # Privacy
       foxyproxy-standard
       privacy-badger
-      bitwarden
 
       # Optimizations
       auto-tab-discard
