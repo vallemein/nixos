@@ -7,7 +7,7 @@
   boot.extraModulePackages = [ ];
   boot.initrd.luks.devices = {
     root = {
-      device = "/dev/nvme0n1p5";
+      device = "/dev/nvme0n1p6";
       preLVM = true;
     };
   };
