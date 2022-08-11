@@ -14,7 +14,7 @@
 
   fileSystems."/" =
     {
-      device = "/dev/disk/by-uuid/2a00fb84-22b9-47ed-827e-777805563c79";
+      device = "/dev/vg/root";
       fsType = "ext4";
     };
 
@@ -25,7 +25,7 @@
     };
 
   swapDevices =
-    [{ device = "/dev/disk/by-uuid/eb9e62f0-bd61-4a95-ac12-b72cb644400b"; }];
+    [{ device = "/dev/vg/swap"; }];
 
   networking.useDHCP = lib.mkDefault true;
 
