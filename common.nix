@@ -33,7 +33,7 @@
     autoUpgrade = {
       enable = true;
       allowReboot = false;
-      flake = "git+https://codeberg.org/cofob/nixos";
+      flake = "github:cofob/nixos";
       dates = "4:45";
     };
   };
@@ -62,7 +62,7 @@
 
   environment.shellAliases = {
     nixupd = ''
-      sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://codeberg.org/cofob/nixos"'';
+      sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "github:cofob/nixos"'';
     tnixupd = "sudo nixos-rebuild switch --flake .";
     find_port = "sudo netstat -tulnp | grep";
     find_proc = "sudo ps -aux | grep";
