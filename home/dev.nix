@@ -154,7 +154,7 @@
         "git@git.averyan.ru:" = {
           insteadOf = [
             "averyan:"
-            "git:"
+            "gitlab:"
           ];
         };
         "git@git.averyan.ru:firesquare/" = {
