@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.packages = with pkgs.unstable; [
+  home.packages = with pkgs; [
     kotatogram-desktop
     deltachat-desktop
     bitwarden
