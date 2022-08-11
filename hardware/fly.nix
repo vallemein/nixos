@@ -5,12 +5,12 @@
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
-  # boot.initrd.luks.devices = {
-  #   root = {
-  #     device = "/dev/nvme0n1p6";
-  #     preLVM = true;
-  #   };
-  # };
+  boot.initrd.luks.devices = {
+    root = {
+      device = "/dev/nvme0n1p5";
+      preLVM = true;
+    };
+  };
 
   fileSystems."/" =
     {
