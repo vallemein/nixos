@@ -13,7 +13,6 @@
         desktopManager.plasma5.enable = true;
         displayManager.lightdm.enable = true;
         xkbOptions = "grp:caps_toggle";
-        videoDrivers = [ "nvidia" ];
         layout = "us,ru";
       };
 
