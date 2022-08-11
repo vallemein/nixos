@@ -40,9 +40,7 @@
 
   security.sudo.wheelNeedsPassword = false;
 
-  nixpkgs.config.allowUnfree = true;
-
-  hardware.enableAllFirmware = true;
+  hardware.enableRedistributableFirmware = true;
 
   programs = {
     gnupg.agent = {

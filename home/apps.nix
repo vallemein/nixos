@@ -1,13 +1,12 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.packages = with pkgs; [
-    unstable.kotatogram-desktop
-    unstable.bitwarden
-    unstable.mumble
-    unstable.nheko
-    deltachat-desktop # Delta Chat wont work in unstable version :(
-    discord
+  home.packages = with pkgs.unstable; [
+    kotatogram-desktop
+    deltachat-desktop
+    bitwarden
+    mumble
+    nheko
     vlc
   ];
 
