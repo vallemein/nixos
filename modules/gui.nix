@@ -12,6 +12,8 @@
       };
 
       hardware.bolt.enable = false;
+
+      flatpak.enable = true;
     };
 
     hardware.opengl.enable = true;
