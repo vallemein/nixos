@@ -8,6 +8,8 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
 
+  services.xserver.videoDrivers = [ "nvidia" ];
+
   virtualisation.docker.enable = true;
 
   networking.hostName = "bear";
