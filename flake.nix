@@ -28,6 +28,9 @@
             nur.nixosModules.nur
             agenix.nixosModule
             {
+              environment.systemPackages = [ agenix.defaultPackage.x86_64-linux ];
+            }
+            {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.cofob = import ./home/bear.nix;
@@ -55,6 +58,9 @@
             home-manager.nixosModules.home-manager
             nur.nixosModules.nur
             agenix.nixosModule
+            {
+              environment.systemPackages = [ agenix.defaultPackage.x86_64-linux ];
+            }
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;

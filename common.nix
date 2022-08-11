@@ -3,6 +3,9 @@
 {
   imports = [ ./modules/modules.nix ./modules/yggdrasil.nix ./modules/gui.nix ./modules/privacy.nix ./modules/ipfs.nix ./modules/bluetooth.nix ];
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelParams = [ "mem_sleep_default=deep" ]; # Enable hibernation
+
   nix = {
     useSandbox = true;
     autoOptimiseStore = true;

@@ -9,5 +9,7 @@
 
   virtualisation.docker.enable = true;
 
+  networking.networkmanager.enable = true;
+
   networking.hostName = "fly";
 }
