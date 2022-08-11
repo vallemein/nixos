@@ -6,13 +6,8 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
-  # boot.kernelParams = [ "mem_sleep_default=deep" ]; # Enable hibernation
 
   virtualisation.docker.enable = true;
-
-  # Enable touchpad support
-  # services.xserver.libinput.enable = true;
 
   networking.hostName = "fly";
 }
