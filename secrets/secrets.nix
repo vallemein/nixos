@@ -8,4 +8,5 @@ let
 in
 {
   "./passwords/cofob.age".publicKeys = users ++ systems;
+  "./wg/aeza/fly.age".publicKeys = users ++ [ fly ];
 }
