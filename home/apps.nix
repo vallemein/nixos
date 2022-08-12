@@ -13,6 +13,8 @@
 
   manual.html.enable = true;
 
+  services.kdeconnect.enable = true;
+
   programs.firefox = {
     enable = true;
     extensions = with pkgs.nur.repos.rycee.firefox-addons; [
