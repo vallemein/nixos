@@ -43,6 +43,8 @@
           # Remove import bookmarks button and remove default bookmarks
           "browser.bookmarks.restore_default_bookmarks" = false;
           "browser.bookmarks.addedImportButton" = true;
+          # Disable top bookmarks
+          "browser.toolbars.bookmarks.visibility" = "never";
 
           # Overwrite welcome page
           "startup.homepage_welcome_url" = "https://nixos.org";
