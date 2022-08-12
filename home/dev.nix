@@ -134,33 +134,26 @@
       url = {
         "git@github.com:" = {
           insteadOf = [
-            "github:"
             "gh:"
           ];
         };
         "git@codeberg.org:" = {
           insteadOf = [
-            "codeberg:"
             "cb:"
           ];
         };
         "git@git.sr.ht:" = {
           insteadOf = [
-            "sourcehut:"
-            "srht:"
             "sh:"
           ];
         };
         "git@git.averyan.ru:" = {
           insteadOf = [
-            "averyan:"
             "gitlab:"
           ];
         };
         "git@git.averyan.ru:firesquare/" = {
           insteadOf = [
-            "firesquare:"
-            "frsqr:"
             "fs:"
           ];
         };
