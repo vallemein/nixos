@@ -3,7 +3,7 @@
 {
   config = {
     environment.systemPackages = with pkgs; [
-      latte-dock
+      # latte-dock
     ];
 
     services = {
