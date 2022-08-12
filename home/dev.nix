@@ -114,7 +114,7 @@
       };
 
       # Set editor theme
-      "workbench.colorTheme" = "GitHub Dark Default";
+      "workbench.colorTheme" = "GitHub Dark Dimmed";
       # Disable welcome screen
       "workbench.startupEditor" = "none";
     };
