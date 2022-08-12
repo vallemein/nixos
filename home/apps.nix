@@ -31,6 +31,7 @@
       # Other
       i-dont-care-about-cookies
       ipfs-companion
+      darkreader
     ];
     profiles = {
       default = {
@@ -80,7 +81,7 @@
           "browser.download.lastDir" = "/home/cofob/Downloads";
 
           # Browser UI customization
-          "browser.uiCustomization.state" = ''{"placements":{"widget-overflow-fixed-list":["downloads-button","jid1-mnnxcxisbpnsxq_jetpack-browser-action","ipfs-firefox-addon_lidel_org-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","foxyproxy_eric_h_jung-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action","adnauseam_rednoise_org-browser-action"],"nav-bar":["back-button","forward-button","urlbar-container"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["personal-bookmarks"]},"seen":["save-to-pocket-button","developer-button","adnauseam_rednoise_org-browser-action","_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","foxyproxy_eric_h_jung-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","ipfs-firefox-addon_lidel_org-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action"],"dirtyAreaCache":["nav-bar","toolbar-menubar","TabsToolbar","PersonalToolbar","widget-overflow-fixed-list"],"currentVersion":17,"newElementCount":6}'';
+          "browser.uiCustomization.state" = ''{"placements":{"widget-overflow-fixed-list":["downloads-button","jid1-mnnxcxisbpnsxq_jetpack-browser-action","ipfs-firefox-addon_lidel_org-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","foxyproxy_eric_h_jung-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action","adnauseam_rednoise_org-browser-action","addon_darkreader_org-browser-action"],"nav-bar":["back-button","forward-button","urlbar-container"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["personal-bookmarks"]},"seen":["save-to-pocket-button","developer-button","adnauseam_rednoise_org-browser-action","_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","foxyproxy_eric_h_jung-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","ipfs-firefox-addon_lidel_org-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action","addon_darkreader_org-browser-action"],"dirtyAreaCache":["nav-bar","toolbar-menubar","TabsToolbar","PersonalToolbar","widget-overflow-fixed-list"],"currentVersion":17,"newElementCount":6}'';
 
           "devtools.everOpened" = true;
 
