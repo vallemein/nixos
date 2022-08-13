@@ -5,7 +5,6 @@
     kotatogram-desktop
     deltachat-desktop
     bitwarden
-    polymc
     mumble
     nheko
     vlc

@@ -45,6 +45,16 @@
                 nixpkgs.overlays = [ overlay-unstable ];
               }
             )
+            ({ config, pkgs, ... }:
+              let
+                overlay-custom = final: prev: {
+                  custom = import ./pkgs/top-level.nix { inherit pkgs; };
+                };
+              in
+              {
+                nixpkgs.overlays = [ overlay-custom ];
+              }
+            )
             {
               nixpkgs.overlays = [ nur.overlay ];
             }
@@ -74,6 +84,16 @@
               in
               {
                 nixpkgs.overlays = [ overlay-unstable ];
+              }
+            )
+            ({ config, pkgs, ... }:
+              let
+                overlay-custom = final: prev: {
+                  custom = import ./pkgs/top-level.nix { inherit pkgs; };
+                };
+              in
+              {
+                nixpkgs.overlays = [ overlay-custom ];
               }
             )
             {
