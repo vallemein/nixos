@@ -23,10 +23,10 @@ index b7f71ada..053c99af 100644
 -        dataPath = applicationDirPath();
 -        adjustedBy += "Fallback to binary path " + dataPath;
 -#endif
-+        dataPath = "~/.local/share/UltimMC";
++        dataPath = "$HOME/.local/share/UltimMC";
      }
- 
+
      if (!FS::ensureFolderPathExists(dataPath))
--- 
+--
 2.36.0
 
