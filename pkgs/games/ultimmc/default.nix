@@ -4,8 +4,15 @@
 }:
 
 pkgs.stdenv.mkDerivation rec {
-  pname = "ultimmc";
+  pname = "UltimMC";
   version = "a522ec3ad4602de1f457a25bce98ef912a29d7d6";
+  desktopItem = (pkgs.makeDesktopItem {
+    name = pname;
+    desktopName = "Minecraft";
+    exec = pname;
+    icon = pname;
+    categories = [ "Game" ];
+  });
 
   src = pkgs.fetchFromGitHub {
     owner = "UltimMC";
@@ -17,6 +24,10 @@ pkgs.stdenv.mkDerivation rec {
 
   nativeBuildInputs = with pkgs; [ cmake file makeWrapper ];
   buildInputs = with pkgs; [ qt5.qtbase jdk zlib ];
+
+  patches = [
+    ./0001-Use-local-path-if-no-dir-arg-specified.patch
+  ];
 
   postPatch = ''
     # hardcode jdk paths
@@ -44,10 +55,13 @@ pkgs.stdenv.mkDerivation rec {
     ];
   in ''
     # xorg.xrandr needed for LWJGL [2.9.2, 3) https://github.com/LWJGL/lwjgl/issues/128
-    wrapProgram $out/bin/UltimMC \
+    wrapProgram $out/bin/${pname} \
       "''${qtWrapperArgs[@]}" \
       --set GAME_LIBRARY_PATH /run/opengl-driver/lib:${libpath} \
       --prefix PATH : ${lib.makeBinPath [ pkgs.xorg.xrandr ]}
+    mkdir -p $out/share/applications $out/share/icons/hicolor/256x256/apps
+    install -Dm644 $src/launcher/resources/multimc/256x256/minecraft.png $out/share/icons/hicolor/256x256/apps/${pname}.png
+    install -Dm644 ${desktopItem}/share/applications/* $out/share/applications
   '';
 
   meta = with lib; {

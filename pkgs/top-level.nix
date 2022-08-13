@@ -1,5 +1,5 @@
 { pkgs, ... }:
 
 {
-  ultimmc = pkgs.callPackage ./games/ultimmc.nix { inherit pkgs; };
+  ultimmc = pkgs.callPackage ./games/ultimmc { inherit pkgs; };
 }
