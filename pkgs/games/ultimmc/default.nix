@@ -37,32 +37,34 @@ pkgs.stdenv.mkDerivation rec {
   '';
 
   cmakeFlags = [ "-DLauncher_PORTABLE=0" ] ++
-               lib.optionals (msaClientID != "") [ "-DLauncher_MSA_CLIENT_ID=${msaClientID}" ];
+    lib.optionals (msaClientID != "") [ "-DLauncher_MSA_CLIENT_ID=${msaClientID}" ];
 
   dontWrapQtApps = true;
 
-  postInstall = let
-    libpath = with pkgs; lib.makeLibraryPath [
-      xorg.libX11
-      xorg.libXext
-      xorg.libXcursor
-      xorg.libXrandr
-      xorg.libXxf86vm
-      libpulseaudio
-      libGL
-      glfw
-      openal
-    ];
-  in ''
-    # xorg.xrandr needed for LWJGL [2.9.2, 3) https://github.com/LWJGL/lwjgl/issues/128
-    wrapProgram $out/bin/${pname} \
-      "''${qtWrapperArgs[@]}" \
-      --set GAME_LIBRARY_PATH /run/opengl-driver/lib:${libpath} \
-      --prefix PATH : ${lib.makeBinPath [ pkgs.xorg.xrandr ]}
-    mkdir -p $out/share/applications $out/share/icons/hicolor/256x256/apps
-    install -Dm644 $src/launcher/resources/multimc/256x256/minecraft.png $out/share/icons/hicolor/256x256/apps/${pname}.png
-    install -Dm644 ${desktopItem}/share/applications/* $out/share/applications
-  '';
+  postInstall =
+    let
+      libpath = with pkgs; lib.makeLibraryPath [
+        xorg.libX11
+        xorg.libXext
+        xorg.libXcursor
+        xorg.libXrandr
+        xorg.libXxf86vm
+        libpulseaudio
+        libGL
+        glfw
+        openal
+      ];
+    in
+    ''
+      # xorg.xrandr needed for LWJGL [2.9.2, 3) https://github.com/LWJGL/lwjgl/issues/128
+      wrapProgram $out/bin/${pname} \
+        "''${qtWrapperArgs[@]}" \
+        --set GAME_LIBRARY_PATH /run/opengl-driver/lib:${libpath} \
+        --prefix PATH : ${lib.makeBinPath [ pkgs.xorg.xrandr ]}
+      mkdir -p $out/share/applications $out/share/icons/hicolor/256x256/apps
+      install -Dm644 $src/launcher/resources/multimc/256x256/minecraft.png $out/share/icons/hicolor/256x256/apps/${pname}.png
+      install -Dm644 ${desktopItem}/share/applications/* $out/share/applications
+    '';
 
   meta = with lib; {
     homepage = "https://github.com/UltimMC/Launcher";
