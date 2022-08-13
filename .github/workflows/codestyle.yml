@@ -35,6 +35,6 @@ jobs:
 
         python .github/commit_and_push.py \
           --token ${{ secrets.GITHUB_TOKEN }} \
-          fire-square/mineflake \
+          cofob/nixos \
           ${{ github.head_ref || github.ref_name }} \
           "Apply codestyle :pencil2:"
