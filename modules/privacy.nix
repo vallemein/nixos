@@ -11,6 +11,7 @@
         proto.httpProxy.outproxy = "http://acetone.i2p:8888";
         proto.httpProxy.inbound.length = 1;
         proto.httpProxy.outbound.length = 1;
+        package = pkgs.unstable.i2pd;
       };
 
       tor = {
