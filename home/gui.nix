@@ -13,5 +13,6 @@
     unifont
 
     latte-dock
+    flameshot
   ];
 }
