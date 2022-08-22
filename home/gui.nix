@@ -11,5 +11,7 @@
     meslo-lgs-nf
     gyre-fonts
     unifont
+
+    latte-dock
   ];
 }
