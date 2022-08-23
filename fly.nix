@@ -27,5 +27,12 @@
     };
   };
 
-  networking.hostName = "fly";
+  networking = {
+    hostName = "fly";
+
+    nebula-global = {
+      enable = true;
+      isLighthouse = false;
+    };
+  };
 }

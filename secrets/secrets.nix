@@ -8,5 +8,10 @@ let
 in
 {
   "./passwords/cofob.age".publicKeys = users ++ systems;
+
   "./wg/aeza/fly.age".publicKeys = users ++ [ fly ];
+
+  "./nebula/ca-crt.age".publicKeys = users ++ systems;
+  "./nebula/fly-crt.age".publicKeys = users ++ [ fly ];
+  "./nebula/fly-key.age".publicKeys = users ++ [ fly ];
 }
