@@ -21,6 +21,7 @@
       dbaeumer.vscode-eslint
       esbenp.prettier-vscode
       wix.vscode-import-cost
+      matklad.rust-analyzer
       svelte.svelte-vscode
       mhutchie.git-graph
       bierner.emojisense
