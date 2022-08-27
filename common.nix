@@ -33,7 +33,7 @@
     autoUpgrade = {
       enable = true;
       allowReboot = false;
-      flake = "github:cofob/nixos";
+      flake = "git+https://git.frsqr.xyz/cofob/nixos";
       dates = "4:45";
     };
   };
