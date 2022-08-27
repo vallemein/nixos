@@ -154,7 +154,7 @@
             "gitlab:"
           ];
         };
-        "git@git.frsqr.xyz:firesquare/" = {
+        "gitea@git.frsqr.xyz:firesquare/" = {
           insteadOf = [
             "fs:"
           ];
