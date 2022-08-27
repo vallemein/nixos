@@ -58,6 +58,7 @@
     terminus_font
     pastebinit
     wget
+    ffsend
   ];
 
   environment.shellAliases = {
