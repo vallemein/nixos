@@ -124,7 +124,7 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-    userName = "cofob";
+    userName = "Egor Ternovoy";
     userEmail = "cofob@riseup.net";
     extraConfig = {
       init.defaultBranch = "main";
