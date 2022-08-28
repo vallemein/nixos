@@ -88,6 +88,7 @@
     mutableUsers = false;
     defaultUserShell = pkgs.zsh;
     users.cofob = {
+      description = "Egor Ternovoy";
       isNormalUser = true;
       extraGroups = [ "wheel" ];
       uid = 1000;
