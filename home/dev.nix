@@ -28,7 +28,6 @@
       jnoortheen.nix-ide
       tyriar.sort-lines
       ms-python.python
-      eamodio.gitlens
       golang.go
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
@@ -81,11 +80,6 @@
       "git.branchRandomName.enable" = true;
       "git.fetchOnPull" = true;
       "git.mergeEditor" = true;
-
-      # Git lens
-      "gitlens.currentLine.enabled" = true;
-      "gitlens.statusBar.enabled" = true;
-      "gitlens.codeLens.enabled" = true;
 
       # Git web links config
       "gitweblinks.useShortHash" = true;
