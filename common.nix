@@ -61,10 +61,6 @@
     ffsend
   ];
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "xxe-pe"
-  ];
-
   environment.shellAliases = {
     nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://git.frsqr.xyz/cofob/nixos"'';
     tnixupd = "sudo nixos-rebuild switch --flake . --fast -p test";
