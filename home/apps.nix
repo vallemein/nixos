@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    (xxe-pe.override { acceptLicense = true; })
     kotatogram-desktop
     deltachat-desktop
     libreoffice-fresh
