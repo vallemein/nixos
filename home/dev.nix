@@ -143,14 +143,14 @@
             "sh:"
           ];
         };
-        "git@git.averyan.ru:" = {
-          insteadOf = [
-            "gitlab:"
-          ];
-        };
         "gitea@git.frsqr.xyz:firesquare/" = {
           insteadOf = [
             "fs:"
+          ];
+        };
+        "gitea@git.frsqr.xyz:" = {
+          insteadOf = [
+            "gitea:"
           ];
         };
       };
