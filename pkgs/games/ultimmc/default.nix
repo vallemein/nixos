@@ -5,7 +5,7 @@
 
 pkgs.stdenv.mkDerivation rec {
   pname = "UltimMC";
-  version = "0.7.0";
+  version = "0.6.11";
   desktopItem = (pkgs.makeDesktopItem {
     name = pname;
     desktopName = "Minecraft";
