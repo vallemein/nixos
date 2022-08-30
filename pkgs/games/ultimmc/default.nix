@@ -18,7 +18,7 @@ pkgs.stdenv.mkDerivation rec {
     owner = "UltimMC";
     repo = "Launcher";
     rev = version;
-    sha256 = "sha256-+UgBblyEx0cKH8UMBOPtjhQLv2YUKj91UokQWKCEPbY=";
+    sha256 = "sha256-v35tOfi1F7cz4MEwprpOGO47b2o70OJGami6p8mqa8o=";
     fetchSubmodules = true;
   };
 
