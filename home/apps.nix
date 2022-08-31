@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    kotatogram-desktop
     deltachat-desktop
     libreoffice-fresh
     bitwarden
