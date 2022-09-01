@@ -78,6 +78,11 @@
   boot.tmpOnTmpfs = true;
 
   services.fstrim.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    pulse.enable = true;
+  };
 
   environment.sessionVariables = {
     XDG_CONFIG_HOME = "$HOME/.config";
