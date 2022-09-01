@@ -4,9 +4,9 @@
   home.packages = with pkgs; [
     deltachat-desktop
     libreoffice-fresh
+    element-desktop
     bitwarden
     mumble
-    nheko
     vlc
   ];
 
