@@ -2,10 +2,6 @@
 
 {
   config = {
-    environment.systemPackages = with pkgs; [
-      # latte-dock
-    ];
-
     services = {
       xserver = {
         enable = true;
