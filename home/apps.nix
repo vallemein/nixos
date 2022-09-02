@@ -24,6 +24,7 @@
       foxyproxy-standard
       privacy-badger
       mailvelope
+      bitwarden
 
       # Optimizations
       auto-tab-discard
