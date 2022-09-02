@@ -14,6 +14,8 @@
       hardware.bolt.enable = false;
 
       flatpak.enable = true;
+
+      pipewire.enable = true;
     };
 
     hardware.opengl.enable = true;

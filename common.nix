@@ -59,6 +59,9 @@
     pastebinit
     wget
     ffsend
+    python3
+    python3Packages.jedi-language-server
+    poetry
   ];
 
   environment.shellAliases = {
@@ -78,7 +81,6 @@
   boot.tmpOnTmpfs = true;
 
   services.fstrim.enable = true;
-  services.pipewire.enable = true;
 
   environment.sessionVariables = {
     XDG_CONFIG_HOME = "$HOME/.config";
