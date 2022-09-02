@@ -13,11 +13,6 @@
         proto.httpProxy.outbound.length = 1;
         package = pkgs.unstable.i2pd;
       };
-
-      tor = {
-        enable = true;
-        tsocks.enable = true;
-      };
     };
   };
 }
