@@ -8,7 +8,7 @@
 
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium;
+    package = pkgs.unstable.vscodium;
     mutableExtensionsDir = false;
     extensions = with pkgs.unstable.vscode-extensions; [
       ms-ceintl.vscode-language-pack-ru
