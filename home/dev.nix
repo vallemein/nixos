@@ -114,6 +114,11 @@
         "editor.formatOnSave" = true;
       };
 
+      # Enable yew html! macro syntax support
+      "emmet.includeLanguages" = {
+        "rust" = "html";
+      };
+
       # Set editor theme
       "workbench.colorTheme" = "GitHub Dark Dimmed";
       # Disable welcome screen
