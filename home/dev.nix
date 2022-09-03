@@ -60,6 +60,12 @@
         version = "0.5.10";
         sha256 = "bY/dphiEPPgTg1zMjvxx4b0Ska2XggRucnZxtbppcLU=";
       }
+      {
+        name = "sass-indented";
+        publisher = "syler";
+        version = "1.8.22";
+        sha256 = "i1z9WTwCuKrfU4AhdoSvGEunkk8gdStsod8jHTEnoFY=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;
