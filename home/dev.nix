@@ -21,6 +21,7 @@
       dbaeumer.vscode-eslint
       esbenp.prettier-vscode
       wix.vscode-import-cost
+      matklad.rust-analyzer
       svelte.svelte-vscode
       mhutchie.git-graph
       bierner.emojisense
@@ -46,12 +47,6 @@
         publisher = "mkhl";
         version = "0.6.1";
         sha256 = "5/Tqpn/7byl+z2ATflgKV1+rhdqj+XMEZNbGwDmGwLQ=";
-      }
-      {
-        name = "rust";
-        publisher = "rust-lang";
-        version = "0.7.8";
-        sha256 = "Y33agSNMVmaVCQdYd5mzwjiK5JTZTtzTkmSGTQrSNg0=";
       }
       {
         name = "better-toml";
