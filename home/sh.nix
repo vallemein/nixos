@@ -90,6 +90,7 @@
       coc-svelte
       vim-svelte
       coc-tailwindcss
+      editorconfig-nvim
       coc-tsserver
       coc-tslint-plugin
       coc-rust-analyzer
