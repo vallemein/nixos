@@ -85,12 +85,14 @@
       vim-devicons
       vim-monokai
       vim-airline
+      rust-vim
       vim-nix
       coc-svelte
       vim-svelte
       coc-tailwindcss
       coc-tsserver
       coc-tslint-plugin
+      coc-rust-analyzer
     ];
   };
 
