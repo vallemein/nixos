@@ -29,7 +29,7 @@
   };
 
   programs.neovim = {
-    enable = false;
+    enable = true;
     coc.enable = true;
     coc.package = pkgs.vimPlugins.coc-nvim;
     coc.settings = {
