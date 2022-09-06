@@ -20,6 +20,10 @@
 
     hardware.opengl.enable = true;
 
+    environment.systemPackages = with pkgs; [
+      nm-tray
+    ];
+
     fonts.fonts = with pkgs; [
       fira-code-symbols
       noto-fonts-emoji
