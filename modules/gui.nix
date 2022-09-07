@@ -5,8 +5,8 @@
     services = {
       xserver = {
         enable = true;
-        desktopManager.lxqt.enable = true;
-        displayManager.lightdm.enable = true;
+        desktopManager.gnome.enable = true;
+        displayManager.gdm.enable = true;
         xkbOptions = "grp:caps_toggle";
         layout = "us,ru";
       };
@@ -19,10 +19,6 @@
     };
 
     hardware.opengl.enable = true;
-
-    environment.systemPackages = with pkgs; [
-      nm-tray
-    ];
 
     fonts.fonts = with pkgs; [
       fira-code-symbols
