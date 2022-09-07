@@ -62,9 +62,12 @@
     wget
     ffsend
     unzip
+    # C/CPP
     cmake
+    clang
     ninja
     gcc
+    pkg-config
     # Python
     python3
     python3Packages.jedi-language-server
@@ -72,12 +75,22 @@
     # Dart
     dart
     flutter
+    nix
+    # Android
+    android-tools
+    android-studio
+    ungoogled-chromium
+  ];
+
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "android-studio-stable"
   ];
 
   environment.variables = {
     CMAKE_CXX_COMPILER = "gcc";
     EDITOR = "nvim";
     VISUAL = "nvim";
+    CHROME_EXECUTABLE = "chromium";
   };
 
   environment.shellAliases = {
