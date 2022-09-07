@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     nixpkgs-fmt
     rnix-lsp
+    lapce
   ];
 
   programs.vscode = {
@@ -151,7 +152,7 @@
       "[dart]" = {
         "editor.formatOnSave" = true;
         "editor.formatOnType" = true;
-        "editor.rulers" = [80];
+        "editor.rulers" = [ 80 ];
         "editor.selectionHighlight" = false;
         "editor.suggest.snippetsPreventQuickSuggestions" = false;
         "editor.suggestSelection" = "first";
