@@ -94,6 +94,8 @@
       coc-tsserver
       coc-tslint-plugin
       coc-rust-analyzer
+      vim-flutter
+      coc-flutter
     ];
   };
 
