@@ -62,6 +62,7 @@
     wget
     ffsend
     unzip
+    cmake
     # Python
     python3
     python3Packages.jedi-language-server
