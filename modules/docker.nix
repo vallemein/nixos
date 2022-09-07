@@ -29,7 +29,7 @@
       users.users.cofob.extraGroups = [ "docker" ];
 
       # docker-compose
-      environment.systemPackages = [ pkgs.docker-compose_2 ];
+      environment.systemPackages = [ pkgs.docker-compose ];
       environment.shellAliases = { dc = "docker-compose"; };
     })
     (lib.mkIf config.virtualisation.docker.enableWatchtower {

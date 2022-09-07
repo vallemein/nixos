@@ -7,11 +7,13 @@
   boot.kernelParams = [ "mem_sleep_default=deep" ]; # Enable hibernation
 
   nix = {
-    useSandbox = true;
-    autoOptimiseStore = true;
+    settings = {
+      sandbox = true;
+      trusted-users = [ "@wheel" ];
+      allowed-users = [ "@wheel" ];
+      auto-optimise-store = true;
+    };
     readOnlyStore = true;
-    allowedUsers = [ "@wheel" ];
-    trustedUsers = [ "@wheel" ];
     extraOptions = ''
       experimental-features = nix-command flakes
       keep-outputs = true

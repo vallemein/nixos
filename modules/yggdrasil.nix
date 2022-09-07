@@ -6,7 +6,7 @@
       persistentKeys = false;
       enable = true;
 
-      config = {
+      settings = {
         Peers = [
           "tls://ygg-ny-us.incognet.io:8884"
           "tcp://ygg-nv-us.incognet.io:8883"
