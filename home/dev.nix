@@ -66,6 +66,18 @@
         version = "1.8.22";
         sha256 = "i1z9WTwCuKrfU4AhdoSvGEunkk8gdStsod8jHTEnoFY=";
       }
+      {
+        name = "dart-code";
+        publisher = "Dart-Code";
+        version = "3.48.0";
+        sha256 = "Huf3DAunqWjzNlnSIbl3CRW1sZx2wP/azQMbRA25OrU=";
+      }
+      {
+        name = "flutter";
+        publisher = "Dart-Code";
+        version = "3.48.0";
+        sha256 = "a/snnR+IXMlKm1p4VOBXjEXnqi7ga29CcCFUQolqTYA=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;

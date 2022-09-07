@@ -63,7 +63,8 @@
     python3
     python3Packages.jedi-language-server
     poetry
-    # Flutter
+    # Dart
+    dart
     flutter
   ];
 
