@@ -141,6 +141,23 @@
       "workbench.colorTheme" = "GitHub Dark Dimmed";
       # Disable welcome screen
       "workbench.startupEditor" = "none";
+
+      "debug.openDebug" = "openOnDebugBreak";
+      "debug.internalConsoleOptions" = "openOnSessionStart";
+      "editor.formatOnSave" = true;
+      "editor.formatOnType" = true;
+      "dart.checkForSdkUpdates" = false;
+
+      "[dart]" = {
+        "editor.formatOnSave" = true;
+        "editor.formatOnType" = true;
+        "editor.rulers" = [80];
+        "editor.selectionHighlight" = false;
+        "editor.suggest.snippetsPreventQuickSuggestions" = false;
+        "editor.suggestSelection" = "first";
+        "editor.tabCompletion" = "onlySnippets";
+        "editor.wordBasedSuggestions" = false;
+      };
     };
   };
 
