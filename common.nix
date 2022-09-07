@@ -74,6 +74,12 @@
     flutter
   ];
 
+  environment.variables = {
+    CMAKE_CXX_COMPILER = "gcc";
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
+
   environment.shellAliases = {
     nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://git.frsqr.xyz/cofob/nixos"'';
     tnixupd = "sudo nixos-rebuild switch --flake . --fast -p test";
