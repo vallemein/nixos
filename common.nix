@@ -61,6 +61,7 @@
     pastebinit
     wget
     ffsend
+    unzip
     # Python
     python3
     python3Packages.jedi-language-server
