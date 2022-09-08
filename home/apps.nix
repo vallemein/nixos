@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     deltachat-desktop
     libreoffice-fresh
+    transmission-gtk
     element-desktop
     bitwarden
     mumble
