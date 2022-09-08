@@ -79,12 +79,7 @@
     nix
     # Android
     android-tools
-    android-studio
     ungoogled-chromium
-  ];
-
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "android-studio-stable"
   ];
 
   environment.variables = {
