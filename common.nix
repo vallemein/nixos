@@ -62,12 +62,13 @@
     wget
     ffsend
     unzip
-    # C/CPP
+    # C/CPP/RUST
     cmake
     clang
     ninja
     gcc
     pkg-config
+    mold
     # Python
     python3
     python3Packages.jedi-language-server
