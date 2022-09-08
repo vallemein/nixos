@@ -101,6 +101,7 @@
     nixclear = "sudo nix-store --gc && sudo nix-collect-garbage -d && nixupd";
     find_port = "sudo netstat -tulnp | grep";
     find_proc = "sudo ps -aux | grep";
+    shell = "nix-shell --run 'zsh' -p";
   };
 
   console = {
