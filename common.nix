@@ -82,6 +82,8 @@
     # Android
     android-tools
     ungoogled-chromium
+
+    steam
   ];
 
   environment.variables = {
