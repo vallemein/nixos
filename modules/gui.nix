@@ -38,5 +38,7 @@
     };
     sound.enable = true;
     nixpkgs.config.pulseaudio = true;
+
+    programs.steam.enable = true;
   };
 }
