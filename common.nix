@@ -44,6 +44,8 @@
 
   hardware.enableRedistributableFirmware = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   programs = {
     gnupg.agent = {
       enable = true;
