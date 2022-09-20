@@ -164,8 +164,8 @@
       # Python
       "python.linting.mypyEnabled" = true;
       "python.formatting.blackArgs" = [
-        "-l=120"
-        "-t=py310"
+        "-l 120"
+        "-t py310"
       ];
       "python.sortImports.path" = "isort";
       "python.languageServer" = "Pylance";
