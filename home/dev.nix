@@ -168,6 +168,8 @@
         "-t=py310"
       ];
       "python.sortImports.path" = "isort";
+      "python.languageServer" = "Pylance";
+      "python.formatting.provider" = "black";
     };
   };
 
