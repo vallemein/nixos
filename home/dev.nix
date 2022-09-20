@@ -11,7 +11,7 @@
     enable = true;
     package = pkgs.unstable.vscodium;
     mutableExtensionsDir = false;
-    extensions = with pkgs.unstable.vscode-extensions; [
+    extensions = with pkgs.vscode-extensions; [
       ms-ceintl.vscode-language-pack-ru
       github.github-vscode-theme
       shardulm94.trailing-spaces
@@ -29,6 +29,7 @@
       jnoortheen.nix-ide
       tyriar.sort-lines
       ms-python.python
+      ms-python.vscode-pylance
       golang.go
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
@@ -159,6 +160,14 @@
         "editor.tabCompletion" = "onlySnippets";
         "editor.wordBasedSuggestions" = false;
       };
+
+      # Python
+      "python.linting.mypyEnabled" = true;
+      "python.formatting.blackArgs" = [
+        "-l=120"
+        "-t=py310"
+      ];
+      "python.sortImports.path" = "isort";
     };
   };
 

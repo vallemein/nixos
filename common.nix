@@ -74,7 +74,12 @@
     # Python
     python3
     python3Packages.jedi-language-server
+    python3Packages.flake8
+    python3Packages.isort
+    python3Packages.autopep8
+    mypy
     poetry
+    black
     # Dart
     dart
     flutter
