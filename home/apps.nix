@@ -23,7 +23,6 @@
       # Privacy
       foxyproxy-standard
       privacy-badger
-      mailvelope
       bitwarden
 
       # Optimizations
