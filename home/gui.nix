@@ -11,5 +11,6 @@
     meslo-lgs-nf
     gyre-fonts
     unifont
+    discord
   ];
 }
