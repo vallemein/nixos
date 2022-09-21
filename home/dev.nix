@@ -39,12 +39,6 @@
         sha256 = "CQVtMdt/fZcNIbH/KybJixnLqCsz5iF1U0k+GfL65Ok=";
       }
       {
-        name = "gitlab-workflow";
-        publisher = "GitLab";
-        version = "3.47.2";
-        sha256 = "VeL3yvfaNIHUPaZHDxSE8pbdh4c93uMjhSMv2PWR6ts=";
-      }
-      {
         name = "direnv";
         publisher = "mkhl";
         version = "0.6.1";
@@ -63,22 +57,10 @@
         sha256 = "bY/dphiEPPgTg1zMjvxx4b0Ska2XggRucnZxtbppcLU=";
       }
       {
-        name = "sass-indented";
-        publisher = "syler";
-        version = "1.8.22";
-        sha256 = "i1z9WTwCuKrfU4AhdoSvGEunkk8gdStsod8jHTEnoFY=";
-      }
-      {
-        name = "dart-code";
-        publisher = "Dart-Code";
-        version = "3.48.0";
-        sha256 = "Huf3DAunqWjzNlnSIbl3CRW1sZx2wP/azQMbRA25OrU=";
-      }
-      {
-        name = "flutter";
-        publisher = "Dart-Code";
-        version = "3.48.0";
-        sha256 = "a/snnR+IXMlKm1p4VOBXjEXnqi7ga29CcCFUQolqTYA=";
+        name = "discord-vscode";
+        publisher = "icrawl";
+        version = "5.8.0";
+        sha256 = "IU/looiu6tluAp8u6MeSNCd7B8SSMZ6CEZ64mMsTNmU=";
       }
     ];
     userSettings = {
