@@ -12,5 +12,6 @@
     gyre-fonts
     unifont
     discord
+    custom.deta
   ];
 }
