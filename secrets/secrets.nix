@@ -14,4 +14,6 @@ in
   "./nebula/ca-crt.age".publicKeys = users ++ systems;
   "./nebula/fly-crt.age".publicKeys = users ++ [ fly ];
   "./nebula/fly-key.age".publicKeys = users ++ [ fly ];
+  "./nebula/bear-crt.age".publicKeys = users ++ [ bear ];
+  "./nebula/bear-key.age".publicKeys = users ++ [ bear ];
 }

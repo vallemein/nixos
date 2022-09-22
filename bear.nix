@@ -16,5 +16,12 @@
 
   virtualisation.docker.enable = true;
 
-  networking.hostName = "bear";
+  networking = {
+    nebula-global = {
+      enable = true;
+      isLighthouse = false;
+    };
+
+    hostName = "bear";
+  };
 }
