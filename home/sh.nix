@@ -140,6 +140,8 @@
       find_port = "sudo netstat -tulnp | grep";
       find_proc = "sudo ps -aux | grep";
       shell = "nix-shell --run 'zsh' -p";
+
+      please = "sudo";
     };
 
     oh-my-zsh = {
