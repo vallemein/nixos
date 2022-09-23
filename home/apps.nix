@@ -2,12 +2,11 @@
 
 {
   home.packages = with pkgs; [
-    tdesktop
-    deltachat-desktop
     libreoffice-fresh
     transmission-gtk
     element-desktop
     bitwarden
+    tdesktop
     mumble
     vlc
   ];
