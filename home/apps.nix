@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    kotatogram-desktop
+    tdesktop
     deltachat-desktop
     libreoffice-fresh
     transmission-gtk
