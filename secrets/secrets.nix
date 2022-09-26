@@ -9,6 +9,8 @@ in
 {
   "./passwords/cofob.age".publicKeys = users ++ systems;
 
+  "./credentials/remote-builder.age".publicKeys = users ++ systems;
+
   "./wg/aeza/fly.age".publicKeys = users ++ [ fly ];
 
   "./nebula/ca-crt.age".publicKeys = users ++ systems;

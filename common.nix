@@ -28,7 +28,24 @@
       automatic = true;
       dates = [ "weekly" ];
     };
+
+    buildMachines = [
+      {
+        sshKey = config.age.secrets.remote-builder.path;
+        system = "x86_64-linux";
+        sshUser = "builder";
+        hostName = "beaver.n.frsqr.xyz";
+      }
+    ];
+
+    distributedBuilds = true;
   };
+
+  programs.ssh.knownHosts = {
+    "beaver.n.frsqr.xyz".publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHKoFVvggf2o3DQsvdAKrfbGMVnly6AmzW/Sebt+1fUW";
+  };
+
+  age.secrets.remote-builder.file = ./secrets/passwords/cofob.age;
 
   system = {
     stateVersion = "22.05";
