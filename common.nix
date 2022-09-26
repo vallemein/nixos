@@ -70,7 +70,12 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; let
+    upgrade-system = pkgs.writeScriptBin "upgrade-system" ''
+      sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://git.frsqr.xyz/cofob/nixos.git?ref=master"
+    ''; in
+  [
+    upgrade-system
     git
     vim
     htop
