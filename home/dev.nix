@@ -166,6 +166,7 @@
       user.signingkey = "5F3D9D3DECE08651DE14D29FACAD4265E193794D";
       commit.gpgsign = true;
       tag.gpgsign = true;
+      push.autoSetupRemote = true;
       pull.rebase = true;
       url = {
         "git@github.com:" = {
