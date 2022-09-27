@@ -62,10 +62,19 @@
         version = "5.8.0";
         sha256 = "IU/looiu6tluAp8u6MeSNCd7B8SSMZ6CEZ64mMsTNmU=";
       }
+      {
+        name = "vscode-translation";
+        publisher = "caiqichang";
+        version = "2.0.4";
+        sha256 = "AAVAojtqe3QL2oOcWP1Y6nuPDAXgECItLIQhvqfLtvU=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;
       "svelte.enable-ts-plugin" = true;
+
+      # Translations
+      "translation.source-language" = "ru";
 
       # Suggest faster
       "editor.quickSuggestions" = {
