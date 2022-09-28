@@ -13,5 +13,6 @@
     unifont
     discord
     custom.deta
+    bottles
   ];
 }
