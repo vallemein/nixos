@@ -155,7 +155,7 @@
       # Python
       "python.linting.mypyEnabled" = true;
       "python.formatting.blackArgs" = [
-        "-l120"
+        "-l100"
         "-tpy310"
       ];
       "python.sortImports.path" = "isort";
