@@ -14,5 +14,7 @@
     discord
     custom.deta
     bottles
+    obsidian
+    obs-studio
   ];
 }
