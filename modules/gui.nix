@@ -1,6 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
+  imports = [ ./mullvad.nix ];
+
   services = {
     xserver = {
       enable = true;
@@ -38,5 +40,5 @@
   sound.enable = true;
   nixpkgs.config.pulseaudio = true;
 
-  services.mullvad-vpn.enable = true;
+  services.mullvad-vpn-custom.enable = true;
 }
