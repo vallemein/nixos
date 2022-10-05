@@ -41,4 +41,34 @@
   nixpkgs.config.pulseaudio = true;
 
   services.mullvad-vpn-custom.enable = true;
+
+  services.syncthing = {
+    enable = true;
+    user = "cofob";
+    dataDir = "/home/cofob";
+    systemService = true;
+    folders = {
+      "/home/cofob/Documents/Learning" = {
+        id = "documents-learning";
+        devices = [ "huawei" ];
+        versioning = {
+          type = "simple";
+          params.keep = "10";
+        };
+      };
+      "/home/cofob/Music" = {
+        id = "music";
+        devices = [ "huawei" ];
+        versioning = {
+          type = "simple";
+          params.keep = "10";
+        };
+      };
+    };
+    devices = {
+      huawei = {
+        id = "V3DPTUO-ESKOTAG-4QK5BH2-ZAVFNQI-RTLGIXX-KBYJ5NM-JPXGRDU-GTTOAQH";
+      };
+    };
+  };
 }

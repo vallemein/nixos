@@ -16,5 +16,6 @@
     bottles
     obsidian
     obs-studio
+    gnome.gnome-music
   ];
 }
