@@ -88,6 +88,9 @@
 
           "devtools.everOpened" = true;
 
+          # HTTPS-only
+          "dom.security.https_only_mode" = true;
+
           # Yggdrasil tweaks
           "network.http.fast-fallback-to-IPv4" = false;
           "browser.fixup.fallback-to-https" = false;
