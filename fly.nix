@@ -27,6 +27,15 @@
     };
   };
 
+  age.secrets.sync-fly-cert.file = ./secrets/syncthing/fly-cert.age;
+  age.secrets.sync-fly-key.file = ./secrets/syncthing/fly-key.age;
+  age.secrets.sync-fly-cert.owner = "cofob";
+  age.secrets.sync-fly-key.owner = "cofob";
+  services.syncthing = {
+    cert = config.age.secrets.sync-fly-cert.path;
+    key = config.age.secrets.sync-fly-key.path;
+  };
+
   networking = {
     hostName = "fly";
 

@@ -56,6 +56,14 @@
           params.keep = "10";
         };
       };
+      "/home/cofob/Documents/Dev" = {
+        id = "documents-dev";
+        devices = [ "huawei" "bear" "fly" ];
+        versioning = {
+          type = "simple";
+          params.keep = "3";
+        };
+      };
       "/home/cofob/Music" = {
         id = "music";
         devices = [ "huawei" ];
@@ -68,6 +76,12 @@
     devices = {
       huawei = {
         id = "V3DPTUO-ESKOTAG-4QK5BH2-ZAVFNQI-RTLGIXX-KBYJ5NM-JPXGRDU-GTTOAQH";
+      };
+      bear = {
+        id = "V4RGEPV-66RY2EP-DKMWW3J-ADAC7TD-CLYEEKM-XZ2YQFJ-AGCHHAP-CZ32XQB";
+      };
+      fly = {
+        id = "FP4SSU3-OZJLAY4-X25CHCU-TK34OZ3-CPY2CK6-CGPFJOS-H4VHSY2-5VTHSA5";
       };
     };
   };

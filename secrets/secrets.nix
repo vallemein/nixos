@@ -18,4 +18,9 @@ in
   "./nebula/fly-key.age".publicKeys = users ++ [ fly ];
   "./nebula/bear-crt.age".publicKeys = users ++ [ bear ];
   "./nebula/bear-key.age".publicKeys = users ++ [ bear ];
+
+  "./syncthing/bear-cert.age".publicKeys = users ++ [ bear ];
+  "./syncthing/bear-key.age".publicKeys = users ++ systems;
+  "./syncthing/fly-cert.age".publicKeys = users ++ [ fly ];
+  "./syncthing/fly-key.age".publicKeys = users ++ systems;
 }
