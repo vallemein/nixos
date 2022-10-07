@@ -58,7 +58,7 @@
       };
       "/home/cofob/Documents/Dev" = {
         id = "documents-dev";
-        devices = [ "huawei" "bear" "fly" ];
+        devices = [ "huawei" "bear" "fly" "rat" ];
         versioning = {
           type = "simple";
           params.keep = "3";
@@ -82,6 +82,9 @@
       };
       fly = {
         id = "FP4SSU3-OZJLAY4-X25CHCU-TK34OZ3-CPY2CK6-CGPFJOS-H4VHSY2-5VTHSA5";
+      };
+      rat = {
+        id = "6HBRNZZ-G2AWAYD-4DEF6KC-HYNXAG7-WMXSEVO-4FGJHBX-BH2XMN2-CQTW7QI";
       };
     };
   };
