@@ -81,6 +81,10 @@
           "browser.fixup.domainsuffixwhitelist.mob" = true;
           "browser.fixup.domainsuffixwhitelist.i2p" = true;
 
+          # Disable sponsored sites (Amazon and similar shit)
+          "browser.newtabpage.activity-stream.showSponsored" = false;
+          "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+
           # Set download dir
           "browser.download.lastDir" = "/home/cofob/Downloads";
 
