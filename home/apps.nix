@@ -64,6 +64,9 @@
           "browser.search.region" = "RU";
           "browser.search.isUS" = false;
 
+          # Set theme
+          "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+
           # Alfis, I2P, tor TLD's
           "browser.fixup.domainsuffixwhitelist.mirror" = true;
           "browser.fixup.domainsuffixwhitelist.screen" = true;
