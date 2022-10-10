@@ -1,2 +1,6 @@
 *.key
 *.crt
+ed*
+rsa*
+iso.nix
+result
