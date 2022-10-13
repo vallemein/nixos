@@ -68,6 +68,12 @@
         version = "2.0.4";
         sha256 = "AAVAojtqe3QL2oOcWP1Y6nuPDAXgECItLIQhvqfLtvU=";
       }
+      {
+        name = "vscode-lldb";
+        publisher = "vadimcn";
+        version = "1.8.1";
+        sha256 = "Uu7ESouPnScXs9x3iCb8MupSwXiZe5sSZqczpKA2aSQ=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;
