@@ -70,6 +70,12 @@
         version = "2.0.4";
         sha256 = "AAVAojtqe3QL2oOcWP1Y6nuPDAXgECItLIQhvqfLtvU=";
       }
+      {
+        name = "copilot";
+        publisher = "GitHub";
+        version = "1.53.7011";
+        sha256 = "eNYT+f6hyLpWcbqHjh+2+NSnL2zfJ4vB41yXfaiR7as=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;
