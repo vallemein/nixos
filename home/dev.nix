@@ -5,6 +5,7 @@
     nixpkgs-fmt
     rnix-lsp
     lapce
+    lldb
   ];
 
   programs.vscode = {
@@ -19,17 +20,18 @@
       bradlc.vscode-tailwindcss
       editorconfig.editorconfig
       WakaTime.vscode-wakatime
+      ms-python.vscode-pylance
       dbaeumer.vscode-eslint
       esbenp.prettier-vscode
       wix.vscode-import-cost
       matklad.rust-analyzer
       svelte.svelte-vscode
+      vadimcn.vscode-lldb
       mhutchie.git-graph
       bierner.emojisense
       jnoortheen.nix-ide
       tyriar.sort-lines
       ms-python.python
-      ms-python.vscode-pylance
       golang.go
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
@@ -67,12 +69,6 @@
         publisher = "caiqichang";
         version = "2.0.4";
         sha256 = "AAVAojtqe3QL2oOcWP1Y6nuPDAXgECItLIQhvqfLtvU=";
-      }
-      {
-        name = "vscode-lldb";
-        publisher = "vadimcn";
-        version = "1.8.1";
-        sha256 = "Uu7ESouPnScXs9x3iCb8MupSwXiZe5sSZqczpKA2aSQ=";
       }
     ];
     userSettings = {
