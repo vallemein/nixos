@@ -10,7 +10,7 @@
 
   programs.vscode = {
     enable = true;
-    package = pkgs.unstable.vscodium;
+    package = pkgs.vscode;
     mutableExtensionsDir = false;
     extensions = with pkgs.vscode-extensions; [
       ms-ceintl.vscode-language-pack-ru
@@ -169,6 +169,9 @@
       "python.sortImports.path" = "isort";
       "python.languageServer" = "Pylance";
       "python.formatting.provider" = "black";
+
+      # Copilot
+      "editor.inlineSuggest.enabled" = true;
     };
   };
 
