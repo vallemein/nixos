@@ -172,6 +172,9 @@
 
       # Copilot
       "editor.inlineSuggest.enabled" = true;
+      "github.copilot.enable" = {
+        "*" = true;
+      };
     };
   };
 
