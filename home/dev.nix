@@ -76,6 +76,12 @@
         version = "1.53.7011";
         sha256 = "eNYT+f6hyLpWcbqHjh+2+NSnL2zfJ4vB41yXfaiR7as=";
       }
+      {
+        name = "inline-fold";
+        publisher = "moalamri";
+        version = "0.1.10";
+        sha256 = "HTqlY790lS+L6yWfDV27VhLNHu4TMzwVNiP8cNzDTjM=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;
