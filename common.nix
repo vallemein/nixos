@@ -6,6 +6,8 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "mem_sleep_default=deep" ]; # Enable hibernation
 
+  services.earlyoom.enable = true;
+
   nix = {
     settings = {
       sandbox = true;
