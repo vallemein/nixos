@@ -2,10 +2,12 @@
 
 {
   home.packages = with pkgs; [
+    github-desktop
     nixpkgs-fmt
     rnix-lsp
     lapce
     lldb
+    gh
   ];
 
   programs.vscode = {
@@ -13,32 +15,36 @@
     package = pkgs.vscode;
     mutableExtensionsDir = false;
     extensions = with pkgs.vscode-extensions; [
-      ms-ceintl.vscode-language-pack-ru
-      github.github-vscode-theme
-      shardulm94.trailing-spaces
-      yzhang.markdown-all-in-one
-      bradlc.vscode-tailwindcss
-      editorconfig.editorconfig
-      WakaTime.vscode-wakatime
-      ms-python.vscode-pylance
-      dbaeumer.vscode-eslint
-      esbenp.prettier-vscode
-      wix.vscode-import-cost
-      matklad.rust-analyzer
-      svelte.svelte-vscode
-      vadimcn.vscode-lldb
-      mhutchie.git-graph
       bierner.emojisense
-      jnoortheen.nix-ide
-      tyriar.sort-lines
-      ms-python.python
+      bradlc.vscode-tailwindcss
+      davidanson.vscode-markdownlint
+      dbaeumer.vscode-eslint
+      eamodio.gitlens
+      editorconfig.editorconfig
+      esbenp.prettier-vscode
+      github.copilot
+      github.github-vscode-theme
+      github.vscode-pull-request-github
       golang.go
+      jnoortheen.nix-ide
+      matklad.rust-analyzer
+      mhutchie.git-graph
+      ms-ceintl.vscode-language-pack-ru
+      ms-python.python
+      ms-python.vscode-pylance
+      shardulm94.trailing-spaces
+      svelte.svelte-vscode
+      tyriar.sort-lines
+      vadimcn.vscode-lldb
+      WakaTime.vscode-wakatime
+      wix.vscode-import-cost
+      yzhang.markdown-all-in-one
     ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
-        name = "vscode-todo-highlight";
-        publisher = "wayou";
-        version = "1.0.5";
-        sha256 = "CQVtMdt/fZcNIbH/KybJixnLqCsz5iF1U0k+GfL65Ok=";
+        name = "todo-tree";
+        publisher = "Gruntfuggly";
+        version = "0.0.219";
+        sha256 = "hV92FSwoIShvoVCxIR4h7qAFAZITE3L1mxNrWkd0y8Y=";
       }
       {
         name = "direnv";
@@ -57,24 +63,6 @@
         publisher = "serayuzgur";
         version = "0.5.10";
         sha256 = "bY/dphiEPPgTg1zMjvxx4b0Ska2XggRucnZxtbppcLU=";
-      }
-      {
-        name = "discord-vscode";
-        publisher = "icrawl";
-        version = "5.8.0";
-        sha256 = "IU/looiu6tluAp8u6MeSNCd7B8SSMZ6CEZ64mMsTNmU=";
-      }
-      {
-        name = "vscode-translation";
-        publisher = "caiqichang";
-        version = "2.0.4";
-        sha256 = "AAVAojtqe3QL2oOcWP1Y6nuPDAXgECItLIQhvqfLtvU=";
-      }
-      {
-        name = "copilot";
-        publisher = "GitHub";
-        version = "1.53.7011";
-        sha256 = "eNYT+f6hyLpWcbqHjh+2+NSnL2zfJ4vB41yXfaiR7as=";
       }
       {
         name = "inline-fold";
