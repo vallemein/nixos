@@ -6,6 +6,11 @@
 
     nur.url = github:nix-community/NUR;
 
+    pkgs-overlay = {
+      url = "git+https://git.frsqr.xyz/firesquare/nur?ref=main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager.url = "github:nix-community/home-manager/release-22.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -13,7 +18,7 @@
     agenix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nur, agenix, home-manager }:
+  outputs = { self, nixpkgs, nur, pkgs-overlay, agenix, home-manager }:
     {
       nixosModules = {
         home-headless = import ./home/common.nix;
@@ -45,7 +50,7 @@
               }
             )
             {
-              nixpkgs.overlays = [ nur.overlay ];
+              nixpkgs.overlays = [ nur.overlay pkgs-overlay.overlays.default ];
             }
           ];
         };
@@ -76,7 +81,7 @@
               }
             )
             {
-              nixpkgs.overlays = [ nur.overlay ];
+              nixpkgs.overlays = [ nur.overlay pkgs-overlay.overlays.default ];
             }
           ];
         };

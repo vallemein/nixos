@@ -4,6 +4,6 @@
   home.packages = with pkgs; [
     superTuxKart
     xonotic
-    polymc
+    ultimmc
   ];
 }
