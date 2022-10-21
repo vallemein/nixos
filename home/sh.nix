@@ -29,9 +29,9 @@
   };
 
   programs.neovim = {
-    enable = true;
+    enable = false;
     coc.enable = true;
-    coc.package = pkgs.unstable.vimPlugins.coc-nvim;
+    coc.package = pkgs.vimPlugins.coc-nvim;
     coc.settings = {
       "svelte.enable-ts-plugin" = true;
 
@@ -78,7 +78,7 @@
       set number
       set wrap
     '';
-    plugins = with pkgs.unstable.vimPlugins; [
+    plugins = with pkgs.vimPlugins; [
       nerdtree
       vim-auto-save
       vim-fugitive

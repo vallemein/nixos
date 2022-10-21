@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     nur.url = github:nix-community/NUR;
 
@@ -14,7 +13,7 @@
     agenix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, nur, agenix, home-manager }:
+  outputs = { self, nixpkgs, nur, agenix, home-manager }:
     {
       nixosModules = {
         home-headless = import ./home/common.nix;
@@ -35,16 +34,6 @@
               home-manager.useUserPackages = true;
               home-manager.users.cofob = import ./home/bear.nix;
             }
-            ({ config, pkgs, ... }:
-              let
-                overlay-unstable = final: prev: {
-                  unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
-                };
-              in
-              {
-                nixpkgs.overlays = [ overlay-unstable ];
-              }
-            )
             ({ config, pkgs, ... }:
               let
                 overlay-custom = final: prev: {
@@ -76,16 +65,6 @@
               home-manager.useUserPackages = true;
               home-manager.users.cofob = import ./home/fly.nix;
             }
-            ({ config, pkgs, ... }:
-              let
-                overlay-unstable = final: prev: {
-                  unstable = nixpkgs-unstable.legacyPackages.x86_64-linux;
-                };
-              in
-              {
-                nixpkgs.overlays = [ overlay-unstable ];
-              }
-            )
             ({ config, pkgs, ... }:
               let
                 overlay-custom = final: prev: {

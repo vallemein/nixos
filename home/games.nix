@@ -2,8 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    unstable.superTuxKart
-    unstable.xonotic
+    superTuxKart
+    xonotic
     polymc
   ];
 }

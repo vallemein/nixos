@@ -47,7 +47,7 @@ in
 
       isLighthouse = cfg.isLighthouse;
 
-      package = pkgs.unstable.nebula;
+      package = pkgs.nebula;
 
       lighthouses = mkIf (!cfg.isLighthouse) [ "10.3.7.10" "10.3.7.11" ];
       staticHostMap = {
