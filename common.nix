@@ -8,6 +8,8 @@
 
   services.earlyoom.enable = true;
 
+  age.secrets.remote-builder.file = ./secrets/credentials/remote-builder.age;
+
   nix = {
     settings = {
       sandbox = true;
@@ -36,18 +38,20 @@
         sshKey = config.age.secrets.remote-builder.path;
         system = "x86_64-linux";
         sshUser = "builder";
-        hostName = "beaver.n.frsqr.xyz";
+        hostName = "10.3.7.30";
+        maxJobs = 3;
+        supportedFeatures = [
+          "big-parallel"
+        ];
       }
     ];
 
-    # distributedBuilds = true;
+    distributedBuilds = true;
   };
 
   programs.ssh.knownHosts = {
-    "beaver.n.frsqr.xyz".publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHKoFVvggf2o3DQsvdAKrfbGMVnly6AmzW/Sebt+1fUW";
+    "10.3.7.30".publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHKoFVvggf2o3DQsvdAKrfbGMVnly6AmzW/Sebt+1fUW";
   };
-
-  age.secrets.remote-builder.file = ./secrets/passwords/cofob.age;
 
   system = {
     stateVersion = "22.11";
