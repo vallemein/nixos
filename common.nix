@@ -46,7 +46,7 @@
       }
     ];
 
-    distributedBuilds = true;
+    distributedBuilds = false;
   };
 
   programs.ssh.knownHosts = {
