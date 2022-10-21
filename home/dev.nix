@@ -22,6 +22,7 @@
       eamodio.gitlens
       editorconfig.editorconfig
       esbenp.prettier-vscode
+      formulahendry.auto-rename-tag
       github.copilot
       github.github-vscode-theme
       github.vscode-pull-request-github
