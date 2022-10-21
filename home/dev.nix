@@ -87,6 +87,16 @@
       "diffEditor.ignoreTrimWhitespace" = false;
       "files.autoSave" = "afterDelay";
 
+      # Sticky nested
+      "editor.stickyScroll.enabled" = true;
+
+      # Set tab size
+      "editor.tabSize" = 2;
+
+      # Git lens
+      "gitlens.showWelcomeOnInstall" = false;
+      "gitlens.showWhatsNewAfterUpgrades" = false;
+
       # Git settings
       "git.enableSmartCommit" = true;
       "git.branchPrefix" = "cofob-";
@@ -127,6 +137,7 @@
         "editor.defaultFormatter" = "svelte.svelte-vscode";
         "editor.formatOnSave" = true;
       };
+      "prettier.printWidth" = 100;
 
       # Enable yew html! macro syntax support
       "emmet.includeLanguages" = {
