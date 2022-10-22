@@ -93,6 +93,9 @@
       # Set tab size
       "editor.tabSize" = 2;
 
+      # Enable ligatures
+      "editor.fontLigatures" = true;
+
       # Git lens
       "gitlens.showWelcomeOnInstall" = false;
       "gitlens.showWhatsNewAfterUpgrades" = false;
