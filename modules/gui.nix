@@ -6,8 +6,8 @@
   services = {
     xserver = {
       enable = true;
-      desktopManager.gnome.enable = true;
-      displayManager.gdm.enable = true;
+      desktopManager.lxqt.enable = true;
+      displayManager.lightdm.enable = true;
       xkbOptions = "grp:caps_toggle";
       layout = "us,ru";
     };
