@@ -99,6 +99,7 @@
       # Git lens
       "gitlens.showWelcomeOnInstall" = false;
       "gitlens.showWhatsNewAfterUpgrades" = false;
+      "gitlens.codeLens.enabled" = true;
 
       # Git settings
       "git.enableSmartCommit" = true;
