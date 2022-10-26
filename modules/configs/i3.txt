@@ -19,6 +19,9 @@ bindsym $mod+Return exec terminator
 # browser binding
 bindsym $mod+b exec firefox
 
+# telgram binding
+bindsym $mod+t exec "telegram-desktop"
+
 # VSC binding
 bindsym $mod+c exec code
 
