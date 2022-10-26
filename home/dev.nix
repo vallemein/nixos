@@ -19,7 +19,6 @@
       bradlc.vscode-tailwindcss
       davidanson.vscode-markdownlint
       dbaeumer.vscode-eslint
-      eamodio.gitlens
       editorconfig.editorconfig
       esbenp.prettier-vscode
       formulahendry.auto-rename-tag
@@ -100,11 +99,6 @@
 
       # Enable ligatures
       "editor.fontLigatures" = true;
-
-      # Git lens
-      "gitlens.showWelcomeOnInstall" = false;
-      "gitlens.showWhatsNewAfterUpgrades" = false;
-      "gitlens.codeLens.enabled" = true;
 
       # Git settings
       "git.enableSmartCommit" = true;
