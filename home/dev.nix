@@ -23,7 +23,6 @@
       editorconfig.editorconfig
       esbenp.prettier-vscode
       formulahendry.auto-rename-tag
-      github.copilot
       github.github-vscode-theme
       github.vscode-pull-request-github
       golang.go
@@ -46,6 +45,12 @@
         publisher = "Gruntfuggly";
         version = "0.0.219";
         sha256 = "hV92FSwoIShvoVCxIR4h7qAFAZITE3L1mxNrWkd0y8Y=";
+      }
+      {
+        name = "copilot";
+        publisher = "github";
+        version = "1.46.6822";
+        sha256 = "L71mC0190ZubqNVliu7es4SDsBTGVokePpcNupABI8Q=";
       }
       {
         name = "direnv";
