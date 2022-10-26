@@ -8,13 +8,14 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
 
-  services.xserver.videoDrivers = [ "nvidia" ];
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "nvidia-x11"
-    "nvidia-settings"
-  ];
-
   virtualisation.docker.enable = true;
+
+  services.xserver.resolutions = [
+    {
+      x = 1440;
+      y = 900;
+    }
+  ];
 
   networking = {
     nebula-global = {

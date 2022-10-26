@@ -9,6 +9,13 @@
 
   virtualisation.docker.enable = true;
 
+  services.xserver.resolutions = [
+    {
+      x = 1920;
+      y = 1080;
+    }
+  ];
+
   networking.networkmanager.enable = true;
 
   age.secrets.wg-aeza-fly.file = ./secrets/wg/aeza/fly.age;

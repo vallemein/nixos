@@ -6,18 +6,32 @@
   services = {
     xserver = {
       enable = true;
-      desktopManager.lxqt.enable = true;
-      displayManager.lightdm.enable = true;
+      windowManager.i3.enable = true;
+      windowManager.i3.configFile = ./configs/i3.txt;
+      displayManager.sddm.enable = true;
       xkbOptions = "grp:caps_toggle";
       layout = "us,ru";
+      videoDrivers = [
+        "nvidia"
+        "nouveau"
+        "amdgpu"
+        "radeon"
+        "modesetting"
+        "fbdev"
+      ];
     };
 
     hardware.bolt.enable = false;
 
-    flatpak.enable = true;
-
     pipewire.enable = true;
   };
+
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "nvidia-x11"
+    "nvidia-settings"
+  ];
+
+  programs.gnupg.agent.pinentryFlavor = "qt";
 
   hardware.opengl.enable = true;
 
