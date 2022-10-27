@@ -16,6 +16,10 @@
     }
   ];
 
+  environment.shellAliases = {
+    brightness = "xrandr --output eDP-1 --brightness";
+  };
+
   networking.networkmanager.enable = true;
 
   age.secrets.wg-aeza-fly.file = ./secrets/wg/aeza/fly.age;
