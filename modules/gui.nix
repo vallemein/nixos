@@ -21,6 +21,8 @@
       ];
     };
 
+    gnome.gnome-keyring.enable = true;
+
     hardware.bolt.enable = false;
 
     pipewire.enable = true;
