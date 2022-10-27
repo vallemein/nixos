@@ -46,10 +46,10 @@
         sha256 = "hV92FSwoIShvoVCxIR4h7qAFAZITE3L1mxNrWkd0y8Y=";
       }
       {
-        name = "copilot";
+        name = "copilot-nightly";
         publisher = "github";
-        version = "1.46.6822";
-        sha256 = "L71mC0190ZubqNVliu7es4SDsBTGVokePpcNupABI8Q=";
+        version = "1.55.7138";
+        sha256 = "5tRhQpca+/OD7ZXvBQXt87E13aCtTn7oNHkI///gr0Q=";
       }
       {
         name = "direnv";
