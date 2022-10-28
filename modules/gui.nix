@@ -58,6 +58,8 @@
 
   services.mullvad-vpn-custom.enable = true;
 
+  services.tailscale.enable = true;
+
   services.syncthing = {
     enable = true;
     user = "cofob";
