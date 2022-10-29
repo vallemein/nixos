@@ -1,14 +1,17 @@
 { config, pkgs, lib, ... }:
 
 {
-  home.packages = with pkgs; [
+  home.packages = with pkgs; let
+    tg = pkgs.callPackage ./pkgs/tdesktop.nix { };
+  in
+  [
     libreoffice-fresh
     transmission-gtk
     element-desktop
     bitwarden
-    tdesktop
     mumble
     vlc
+    tg
   ];
 
   manual.html.enable = true;
