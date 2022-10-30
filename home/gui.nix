@@ -3,20 +3,7 @@
 {
   imports = [ ./apps.nix ./dev.nix ];
 
-  programs.terminator = {
-    enable = true;
-    config = {
-      global_config = {
-        borderless = true;
-        title_font = "DejaVu Sans Mono 8";
-      };
-      profiles.default = {
-        font = "Fixed 8";
-        use_system_font = false;
-        background_color = "#212121";
-      };
-    };
-  };
+  programs.kitty.enable = true;
 
   home.packages = with pkgs; [
     noto-fonts-emoji

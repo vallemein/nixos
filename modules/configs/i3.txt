@@ -14,7 +14,7 @@ exec "setxkbmap -option 'grp:caps_toggle'"
 exec "xsetroot -solid '#333333'"
 
 # terminal binding
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec kitty
 
 # browser binding
 bindsym $mod+b exec firefox
