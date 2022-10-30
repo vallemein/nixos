@@ -109,10 +109,6 @@
     mypy
     poetry
     black
-    # Dart
-    dart
-    flutter
-    nix
     # Android
     android-tools
     ungoogled-chromium
