@@ -13,6 +13,9 @@ exec "setxkbmap -option 'grp:caps_toggle'"
 # set background
 exec "xsetroot -solid '#333333'"
 
+# autostart
+exec "mullvad-gui"
+
 # terminal binding
 bindsym $mod+Return exec kitty
 
