@@ -8,7 +8,7 @@
     config = {
       global_config = {
         borderless = true;
-        title_font = "DejaVu Sans Mono 7";
+        title_font = "DejaVu Sans Mono 8";
       };
       profiles.default = {
         font = "Fixed 8";
