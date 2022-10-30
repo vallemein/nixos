@@ -3,7 +3,16 @@
 {
   imports = [ ./apps.nix ./dev.nix ];
 
-  programs.kitty.enable = true;
+  programs.kitty = {
+    enable = true;
+    font = {
+      name = "DejaVu Sans";
+      size = 10;
+    };
+    settings = {
+      background = "#191919";
+    };
+  };
 
   home.packages = with pkgs; [
     noto-fonts-emoji
