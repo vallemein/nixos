@@ -20,5 +20,9 @@
     obs-studio
     termusic
     mpv
+    # Screenshots
+    maim
+    xclip
+    xdotool
   ];
 }
