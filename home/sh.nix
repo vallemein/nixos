@@ -140,6 +140,7 @@
       find_port = "sudo netstat -tulnp | grep";
       find_proc = "sudo ps -aux | grep";
       shell = "nix-shell --run 'zsh' -p";
+      brightness = "xrandr --output eDP-1 --brightness";
 
       please = "sudo";
     };

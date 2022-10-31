@@ -116,8 +116,8 @@
 
   environment.variables = {
     CMAKE_CXX_COMPILER = "gcc";
-    EDITOR = "nvim";
-    VISUAL = "nvim";
+    EDITOR = "code";
+    VISUAL = "code";
     CHROME_EXECUTABLE = "chromium";
   };
 
@@ -130,6 +130,7 @@
     find_proc = "sudo ps -aux | grep";
     shell = "nix-shell --run 'zsh' -p";
     please = "sudo";
+    brightness = "xrandr --output eDP-1 --brightness";
   };
 
   console = {
