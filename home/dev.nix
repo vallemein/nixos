@@ -102,7 +102,7 @@
 
       # Git settings
       "git.enableSmartCommit" = true;
-      "git.branchPrefix" = "cofob-";
+      "git.branchPrefix" = "cofob/";
       "git.confirmSync" = false;
       "git.autofetch" = true;
       "git.autoStash" = true;
