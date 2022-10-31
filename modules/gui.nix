@@ -21,6 +21,11 @@
       ];
     };
 
+    picom = {
+      enable = true;
+      vSync = true;
+    };
+
     gnome.gnome-keyring.enable = true;
 
     hardware.bolt.enable = false;
