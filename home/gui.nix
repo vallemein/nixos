@@ -35,5 +35,6 @@
     xdotool
     konsole
     kdenlive
+    (pkgs.writeScriptBin "br" "xrandr --output eDP-1 --brightness $1")
   ];
 }
