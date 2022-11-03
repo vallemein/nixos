@@ -17,7 +17,7 @@ exec "xsetroot -solid '#333333'"
 exec "mullvad-gui"
 
 # terminal binding
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec konsole
 
 # browser binding
 bindsym $mod+b exec firefox

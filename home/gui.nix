@@ -33,5 +33,7 @@
     maim
     xclip
     xdotool
+    konsole
+    kdenlive
   ];
 }
