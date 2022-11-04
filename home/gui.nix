@@ -29,6 +29,7 @@
     obs-studio
     termusic
     mpv
+    krita
     # Screenshots
     maim
     xclip
