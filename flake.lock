@@ -59,11 +59,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1669090133,
-        "narHash": "sha256-i81e6UZuRD2jSXw6tfsiLtKPcX4UkMG+Wl7R2L9zrsI=",
+        "lastModified": 1669114236,
+        "narHash": "sha256-3fm5naAfT+EoQfm47szXTZIk9wkkIIqMTsJqFSecnoQ=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "e8ed6031bd3d9ebf4075622e379cb7aec64c13bc",
+        "rev": "0dc5d381f71beb8a3bf58e302f1d51d4f00c4177",
         "type": "github"
       },
       "original": {
@@ -81,16 +81,15 @@
       "locked": {
         "lastModified": 1666372285,
         "narHash": "sha256-iIrb3URs7h3VdUNhQ+izlNsbcW0nztK2/KfVAJXeBI0=",
-        "ref": "main",
+        "owner": "cofob",
+        "repo": "nixos-pkgs",
         "rev": "0229f7b9fffdfb26e5bc88a260ec2186d6adeadb",
-        "revCount": 11,
-        "type": "git",
-        "url": "https://git.frsqr.xyz/firesquare/nur"
+        "type": "github"
       },
       "original": {
-        "ref": "main",
-        "type": "git",
-        "url": "https://git.frsqr.xyz/firesquare/nur"
+        "owner": "cofob",
+        "repo": "nixos-pkgs",
+        "type": "github"
       }
     },
     "root": {

@@ -58,7 +58,7 @@
     autoUpgrade = {
       enable = true;
       allowReboot = false;
-      flake = "git+https://git.frsqr.xyz/cofob/nixos";
+      flake = "github:cofob/nixos";
       dates = "4:45";
     };
   };
@@ -78,7 +78,7 @@
 
   environment.systemPackages = with pkgs; let
     upgrade-system = pkgs.writeScriptBin "upgrade-system" ''
-      sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://git.frsqr.xyz/cofob/nixos.git?ref=master"
+      sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "github:cofob/nixos.git?ref=master"
     '';
   in
   [
@@ -122,7 +122,7 @@
   };
 
   environment.shellAliases = {
-    nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "git+https://git.frsqr.xyz/cofob/nixos"'';
+    nixupd = ''sudo rm -rf /root/.cache && sudo nixos-rebuild switch --flake "github:cofob/nixos"'';
     tnixupd = "sudo nixos-rebuild switch --flake . --fast -p test";
     tnix = "nixos-rebuild dry-build --flake .";
     nixclear = "sudo nix-store --gc && sudo nix-collect-garbage -d && nixupd";

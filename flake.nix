@@ -7,7 +7,7 @@
     nur.url = github:nix-community/NUR;
 
     pkgs-overlay = {
-      url = "git+https://git.frsqr.xyz/firesquare/nur?ref=main";
+      url = "github:cofob/nixos-pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

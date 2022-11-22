@@ -116,16 +116,6 @@
 
       # Git web links config
       "gitweblinks.useShortHash" = true;
-      "gitweblinks.gitLabEnterprise" = [
-        {
-          "http" = "https://git.averyan.ru";
-          "ssh" = "git@git.averyan.ru";
-        }
-        {
-          "http" = "https://git.frsqr.xyz";
-          "ssh" = "git@git.averyan.ru";
-        }
-      ];
 
       # Formatter settings
       "[javascript]" = {
@@ -212,21 +202,6 @@
         "git@codeberg.org:" = {
           insteadOf = [
             "cb:"
-          ];
-        };
-        "git@git.sr.ht:" = {
-          insteadOf = [
-            "sh:"
-          ];
-        };
-        "gitea@git.frsqr.xyz:firesquare/" = {
-          insteadOf = [
-            "fs:"
-          ];
-        };
-        "gitea@git.frsqr.xyz:" = {
-          insteadOf = [
-            "gitea:"
           ];
         };
       };
