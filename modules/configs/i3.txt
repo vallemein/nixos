@@ -23,7 +23,7 @@ bindsym $mod+Return exec konsole
 bindsym $mod+b exec firefox
 
 # telgram binding
-bindsym $mod+t exec "telegram-desktop"
+bindsym $mod+t exec "kotatogram-desktop"
 
 # VSC binding
 bindsym $mod+c exec code
