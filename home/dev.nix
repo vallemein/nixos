@@ -75,6 +75,12 @@
         version = "0.1.10";
         sha256 = "HTqlY790lS+L6yWfDV27VhLNHu4TMzwVNiP8cNzDTjM=";
       }
+      {
+        name = "codespaces";
+        publisher = "GitHub";
+        version = "1.13.1";
+        sha256 = "eOXFiSJ396qfDGS2MYEY1nzGmB85p/+FIWpKQ0OnF4c=";
+      }
     ];
     userSettings = {
       "nix.enableLanguageServer" = true;
