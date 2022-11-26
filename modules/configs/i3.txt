@@ -15,6 +15,7 @@ exec "xsetroot -solid '#333333'"
 
 # autostart
 exec "mullvad-gui"
+exec "blueman-applet"
 
 # terminal binding
 bindsym $mod+Return exec konsole
