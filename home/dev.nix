@@ -140,7 +140,7 @@
         "editor.formatOnType" = true;
       };
 
-      "prettier.printWidth" = 100;
+      "prettier.printWidth" = 120;
 
       # Enable yew html! macro syntax support
       "emmet.includeLanguages" = {
@@ -166,7 +166,7 @@
       "python.linting.pydocstyleEnabled" = true;
       "python.linting.pydocstylePath" = "${pkgs.python3Packages.pydocstyle}/bin/pydocstyle";
       "python.formatting.blackArgs" = [
-        "-l100"
+        "-l120"
         "-tpy310"
       ];
       "python.languageServer" = "Pylance";
