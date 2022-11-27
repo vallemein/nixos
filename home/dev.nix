@@ -158,29 +158,29 @@
       "editor.formatOnType" = true;
 
       # Python
-      "python.defaultInterpreterPath" = "${pkgs.python3}/bin/python";
+      # "python.defaultInterpreterPath" = "${pkgs.python3}/bin/python";
       "python.linting.flake8Enabled" = false;
-      "python.linting.flake8Path" = "${pkgs.python3Packages.flake8}/bin/flake8";
+      # "python.linting.flake8Path" = "${pkgs.python3Packages.flake8}/bin/flake8";
       "python.linting.mypyEnabled" = true;
-      "python.linting.mypyPath" = "${pkgs.mypy}/bin/mypy";
+      # "python.linting.mypyPath" = "${pkgs.mypy}/bin/mypy";
       "python.linting.pydocstyleEnabled" = true;
-      "python.linting.pydocstylePath" = "${pkgs.python3Packages.pydocstyle}/bin/pydocstyle";
+      # "python.linting.pydocstylePath" = "${pkgs.python3Packages.pydocstyle}/bin/pydocstyle";
       "python.formatting.blackArgs" = [
         "-l120"
         "-tpy310"
       ];
       "python.languageServer" = "Pylance";
-      "python.sortImports.path" = "${pkgs.python3Packages.isort}/bin/isort";
-      "python.isort.path" = "${pkgs.python3Packages.isort}/bin/isort";
-      "python.formatting.isort.path" = "${pkgs.python3Packages.isort}/bin/isort";
+      # "python.sortImports.path" = "${pkgs.python3Packages.isort}/bin/isort";
+      # "python.isort.path" = "${pkgs.python3Packages.isort}/bin/isort";
+      # "python.formatting.isort.path" = "${pkgs.python3Packages.isort}/bin/isort";
       "python.formatting.provider" = "black";
-      "python.formatting.blackPath" = "${pkgs.black}/bin/black";
-      "python.formatting.autopep8Path" = "${pkgs.python3Packages.autopep8}/bin/autopep8";
-      "python.formatting.yapfPath" = "${pkgs.yapf}/bin/yapf";
+      # "python.formatting.blackPath" = "${pkgs.black}/bin/black";
+      # "python.formatting.autopep8Path" = "${pkgs.python3Packages.autopep8}/bin/autopep8";
+      # "python.formatting.yapfPath" = "${pkgs.yapf}/bin/yapf";
       "python.testing.pytestEnabled" = true;
-      "python.testing.pytestPath" = "${pkgs.python3Packages.pytest}/bin/pytest";
+      # "python.testing.pytestPath" = "${pkgs.python3Packages.pytest}/bin/pytest";
       "python.venvPath" = "~/.cache/pypoetry/virtualenvs";
-      "python.poetryPath" = "${pkgs.poetry}/bin/poetry";
+      # "python.poetryPath" = "${pkgs.poetry}/bin/poetry";
 
       # Copilot
       "editor.inlineSuggest.enabled" = true;
