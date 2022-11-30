@@ -136,9 +136,6 @@
         "editor.defaultFormatter" = "svelte.svelte-vscode";
         "editor.formatOnSave" = true;
       };
-      "[python]" = {
-        "editor.formatOnType" = true;
-      };
 
       "prettier.printWidth" = 120;
 
