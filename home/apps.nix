@@ -59,7 +59,7 @@
           "signon.management.page.breach-alerts.enabled" = false;
           "signon.rememberSignons" = false;
 
-          "browser.startup.homepage" = "https://webcrate.cofob.deta.app/";
+          "browser.startup.homepage" = "https://duckduckgo.com/";
           "general.useragent.locale" = "en-US";
           "browser.search.region" = "RU";
           "browser.search.isUS" = false;
