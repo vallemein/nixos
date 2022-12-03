@@ -5,9 +5,9 @@
 
   programs.home-manager.enable = true;
   home = {
-    homeDirectory = "/home/cofob";
-    stateVersion = "22.05";
-    username = "cofob";
+    homeDirectory = "/home/vad";
+    stateVersion = "22.11";
+    username = "vad";
   };
 
   services.gpg-agent = {
