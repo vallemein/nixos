@@ -3,7 +3,7 @@
 {
   config = {
     services.openssh = {
-      enable = true;
+      enable = false;
       ports = [ 22 ];
       permitRootLogin = "no";
       passwordAuthentication = false;
