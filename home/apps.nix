@@ -2,13 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    kotatogram-desktop-with-webkit
-    libreoffice-fresh
-    transmission-gtk
-    element-desktop
-    bitwarden
-    mumble
-    vlc
+    qbittorrent
   ];
 
   manual.html.enable = true;
@@ -22,15 +16,12 @@
       # Privacy
       foxyproxy-standard
       privacy-badger
-      bitwarden
 
       # Optimizations
       auto-tab-discard
       decentraleyes
       clearurls
-
-      # Other
-      ipfs-companion
+      
     ];
     profiles = {
       default = {
@@ -67,40 +58,17 @@
           # Set theme
           "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
 
-          # Alfis, I2P, tor TLD's
-          "browser.fixup.domainsuffixwhitelist.mirror" = true;
-          "browser.fixup.domainsuffixwhitelist.screen" = true;
-          "browser.fixup.domainsuffixwhitelist.merch" = true;
-          "browser.fixup.domainsuffixwhitelist.index" = true;
-          "browser.fixup.domainsuffixwhitelist.onion" = true;
-          "browser.fixup.domainsuffixwhitelist.anon" = true;
-          "browser.fixup.domainsuffixwhitelist.conf" = true;
-          "browser.fixup.domainsuffixwhitelist.ygg" = true;
-          "browser.fixup.domainsuffixwhitelist.srv" = true;
-          "browser.fixup.domainsuffixwhitelist.btn" = true;
-          "browser.fixup.domainsuffixwhitelist.mob" = true;
-          "browser.fixup.domainsuffixwhitelist.i2p" = true;
-
           # Disable sponsored sites (Amazon and similar shit)
           "browser.newtabpage.activity-stream.showSponsored" = false;
           "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
 
           # Set download dir
-          "browser.download.lastDir" = "/home/cofob/Downloads";
-
-          # Browser UI customization
-          "browser.uiCustomization.state" = ''{"placements":{"widget-overflow-fixed-list":["downloads-button","jid1-mnnxcxisbpnsxq_jetpack-browser-action","ipfs-firefox-addon_lidel_org-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","foxyproxy_eric_h_jung-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action","adnauseam_rednoise_org-browser-action","addon_darkreader_org-browser-action","_290ce447-2abb-4d96-8384-7256dd4a1c43_-browser-action","jid1-aqqsmbyb0a8adg_jetpack-browser-action","_b7f0a607-9c0a-46dc-86ad-e2e1a883b25c_-browser-action","jid1-5fs7itlscuazbgwr_jetpack-browser-action","webextension_metamask_io-browser-action","_5799d9b6-8343-4c26-9ab6-5d2ad39884ce_-browser-action"],"nav-bar":["back-button","forward-button","urlbar-container","_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs","new-tab-button","alltabs-button"],"PersonalToolbar":["personal-bookmarks"]},"seen":["save-to-pocket-button","developer-button","adnauseam_rednoise_org-browser-action","_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action","_74145f27-f039-47ce-a470-a662b129930a_-browser-action","jid1-bofifl9vbdl2zq_jetpack-browser-action","foxyproxy_eric_h_jung-browser-action","jid1-kkzogwgsw3ao4q_jetpack-browser-action","ipfs-firefox-addon_lidel_org-browser-action","jid1-mnnxcxisbpnsxq_jetpack-browser-action","addon_darkreader_org-browser-action","_290ce447-2abb-4d96-8384-7256dd4a1c43_-browser-action","jid1-aqqsmbyb0a8adg_jetpack-browser-action","_446900e4-71c2-419f-a6a7-df9c091e268b_-browser-action","_b7f0a607-9c0a-46dc-86ad-e2e1a883b25c_-browser-action","jid1-5fs7itlscuazbgwr_jetpack-browser-action","_5799d9b6-8343-4c26-9ab6-5d2ad39884ce_-browser-action","webextension_metamask_io-browser-action"],"dirtyAreaCache":["nav-bar","toolbar-menubar","TabsToolbar","PersonalToolbar","widget-overflow-fixed-list"],"currentVersion":17,"newElementCount":6}'';
+          "browser.download.lastDir" = "/home/vad/Downloads";
 
           "devtools.everOpened" = true;
 
           # HTTPS-only
           "dom.security.https_only_mode" = true;
-
-          # Yggdrasil tweaks
-          "network.http.fast-fallback-to-IPv4" = false;
-          "browser.fixup.fallback-to-https" = false;
-          "browser.fixup.alternate.enabled" = false;
-          "network.dns.disableIPv6" = false;
 
           # telemetry
           "browser.newtabpage.activity-stream.feeds.telemetry" = false;
