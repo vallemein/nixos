@@ -12,8 +12,8 @@
 
   services.xserver.resolutions = [
     {
-      x = 1440;
-      y = 900;
+      x = 1920;
+      y = 1080;
     }
   ];
 
