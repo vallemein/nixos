@@ -72,36 +72,7 @@
         "type": "github"
       }
     },
-    "pkgs-overlay": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1666372285,
-        "narHash": "sha256-iIrb3URs7h3VdUNhQ+izlNsbcW0nztK2/KfVAJXeBI0=",
-        "owner": "cofob",
-        "repo": "nixos-pkgs",
-        "rev": "0229f7b9fffdfb26e5bc88a260ec2186d6adeadb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "cofob",
-        "repo": "nixos-pkgs",
-        "type": "github"
-      }
-    },
-    "root": {
-      "inputs": {
-        "agenix": "agenix",
-        "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs",
-        "nur": "nur",
-        "pkgs-overlay": "pkgs-overlay"
-      }
-    }
-  },
+  
   "root": "root",
   "version": 7
 }
