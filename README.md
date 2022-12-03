@@ -3,4 +3,3 @@
 ## Machines
 
  - Bear (pc)
- - Fly (laptop)
